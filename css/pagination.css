@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 25px Segoe UI Light;
+  background-color: #2D2D2D;
+  color: #FFF;
+}
+#main {
+  width: 200px;
+  margin: 0 auto;
+}
+#numbers {
+  margin: 20px 0 10px 0;
+}
+#numbers a {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #3273d6;
+  padding: 5px;
+  border: 1px solid #3273d6;
+}
+#numbers .active {
+  background-color: #2D2D2D;
+}
+ul li {
+  list-style-type: none;
+}

@@ -1,0 +1,30 @@
+.list{
+
+  margin: 50px;
+  padding-left:40%;
+  text-align: center;
+/*  border: 1px solid white;*/
+  decoration: none;
+}
+.list a{
+
+  float: left;
+  font:normal 2em Orator Std;
+  color: white;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+   }
+.userName{
+     margin-top: -0.7em;
+     float:right;
+   }
+   .list img{
+     margin-right: 20px;
+   }
+#topH2{
+  text-align: center;
+  clear:both;
+  margin-top: 2%;
+  color:white;
+}

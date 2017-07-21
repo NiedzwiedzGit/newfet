@@ -1,0 +1,356 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    cursor: default;
+}
+
+#AboutUs {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    color: white;
+    background: url(../images/geom_fon_AboutUs.jpg);
+    background-size: cover;
+}
+
+
+/*maineContent знаходиться в підключених текстових файлах */
+
+.maineContent {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    /*  border: 3px red solid;*/
+    padding: 20%;
+    padding-top: 0;
+}
+
+
+/*h1 {
+    background-color: #000;
+}
+
+.clicked {
+    background-color: red;
+}*/
+
+.maineContent h1 {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 1.5em;
+}
+
+.maineContent h1:first-child {
+    margin-top: 1%;
+}
+
+#services {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    color: white;
+    background: url(../images/geom_fon_service.jpg);
+    background-size: cover;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+.align-center {
+    text-align: center;
+}
+
+#ContactUs {
+    position: absolute;
+    z-index: 100;
+    /*для хедер2 має бути більше ніж 300*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/geom_fon.jpg);
+    background-size: cover;
+    background-attachment: absolute;
+    overflow:hidden;
+}
+#ForgotPas {
+    position: absolute;
+    z-index: 100;
+    /*для хедер2 має бути більше ніж 300*/
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/forgot_fon.jpg);
+    background-size: cover;
+}
+
+.row {
+    margin: -20px 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.row .col.x-50 {
+    width: 50%;
+}
+
+.row .col.x-100 {
+    width: 100%;
+}
+
+.content-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.get-in-touch {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.get-in-touch .title {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 48px;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+    outline: none;
+}
+
+.contact-form .input-text:focus+.label, .contact-form .input-text.not-empty+.label {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+}
+
+.contact-form .input-text:focus+.label_message, .contact-form .input-text.not-empty+.label_message {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+    transition: 1s;
+    opacity: 0;
+
+
+}
+
+
+.contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    opacity: 1;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.label2{
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #888;
+  cursor: default;
+  user-select: none;
+  opacity: 1;
+}
+
+/*send_pass.php*/
+.label3{
+  font-family: Lusitana, serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: white;
+  cursor: default;
+  user-select: none;
+  opacity: 1;
+}
+.contact-form .label_message {
+    position: absolute;
+    left: 20px;
+    bottom: 70px;
+    font-family: Lusitana, serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+
+}
+.contact-form .label_message :hover{
+}
+.contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.note {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: Lusitana, serif;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.note .link {
+    color: #888;
+    text-decoration: none;
+}
+
+.note .link:hover {
+    text-decoration: underline;
+}
+
+#message {
+    height: 100px;
+}
+
+
+/*Регулює стиль поля на яке натиснули*/
+
+
+/*.button_fixed{
+  background:yellow;
+font-size: 250%;
+
+}*/
+
+.side_nav {
+    margin-left: -10px;
+    position: fixed;
+    margin-top: 20%;
+}
+
+.date {
+    margin: 10px;
+    background: url(../images/forgot_fon.jpg);
+    font-size: 1em;
+    color: white;
+    	border-radius: 50px;
+}
+
+.date:hover {
+    margin: 10px;
+    background: white;
+    cursor: pointer;
+    /*transform: scale3d(1.2, 1, 0.1);*/
+    transform: scale(1.2);
+    left: 20px;
+    transition: 0.3s linear;
+    color: black;
+}
+.date:active{
+  background: yellow;
+  width: 300px;
+}
+
+.maineContent p {
+    line-height: 1.7;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.9em;
+    cursor: pointer;
+    -moz-user-select: none;
+    /* Mozilla Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer (не поддерживается) */
+    -o-user-select: none;
+    /* Opera Presto (не поддерживается) */
+    -webkit-user-select: none;
+    /* Google Chrome, Opera Next, Safari */
+}
+
+.maineContent img {
+    max-width: 600px;
+    margin-left: 10%;
+}
+
+
+@media screen and (max-width:1200px) {
+    .maineContent {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .maineContent img {
+        width: 80%;
+        max-width: 400px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width:800px) {
+  .maineContent img {
+        max-width: 200px;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 1000px) {
+  .date {
+      left: -75%;
+      margin: 10px;
+      background: url(../images/forgot_fon.jpg);
+      font-size: 1em;
+      color: white;
+  }
+
+}

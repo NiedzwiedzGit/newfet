@@ -1,0 +1,1754 @@
+/*@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+
+}*/
+
+                                 /****************Головна сторінка***************/
+ @font-face {
+    font-family: Indento 5; /* Гарнитура шрифта */
+    src: local(pompadur), url(fonts/Indento Regular.ttf); /* Для остальных браузеров */
+   }
+@keyframes slidy {
+0% { left: 0%; }
+30% { left: 0%; }
+
+35% { left: -100%; }
+65% { left: -100%; }
+
+70% { left: -200%; }
+100% { left: -200%; }
+
+}
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+30% { left: 0%; }
+
+35% { left: -100%; }
+65% { left: -100%; }
+
+70% { left: -200%; }
+100% { left: -200%; }
+
+}
+@keyframes blue_neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px
+    #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px
+    #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px
+    #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px
+    #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@-moz-keyframes blue_neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px
+    #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px
+    #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px
+    #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px
+    #228DFF, 0 0 75px #228DFF;
+  }
+}
+@-webkit-keyframes blue_neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px
+    #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px
+    #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px
+    #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px
+    #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    z-index:0;
+}
+#wraper{
+
+    width: 100%;
+  	height: 100%;
+  	color:white;
+  	font-size:13px;
+    overflow: hidden;
+  	/*background: url(../images/fon.jpg) ;*/
+    background:#dce8e7;
+  	text-align: center;
+
+}
+.screen{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+/*  background: url(../images/screen.png) top center no-repeat;*/
+
+/*  border: 30px solid black;*/
+  z-index: 9;
+  opacity: 0.98;
+
+}
+#wraperPortfolio{
+
+    width: 100%;
+  	height: 100%;
+  	color:white;
+  	font-size:13px;
+    overflow: hidden;
+  	background: url(../images/fon.jpg) ;
+  	text-align: center;
+
+}
+#wraperIndex{
+  width: 100%;
+  height: auto;
+  color:white;
+  font-size:13px;
+  /*background: url(../images/fon.jpg) ;*/
+  background:#dce8e7;
+  text-align: center;
+}
+#slider {position: relative;}
+
+div#slider {
+	overflow: hidden;
+	width:100%;
+	max-height:950px;
+	min-width:auto;
+	min-height:auto;
+
+	}
+div#slider figure img {
+	width: 20%;
+	float: left;
+	max-width:1920px;
+	min-width:auto;
+
+	}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10s slidy infinite;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+           /////////////////////////////////////////////////////////////////
+                         /////////////////////////////////////
+                                   ///////////////
+#textContent{
+  position: absolute;
+  background: url(../images/screen.png) top center no-repeat;
+  width: auto;
+  z-index: 100;
+  height: 50%;
+  background:yellow;
+
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  font-family: Lato;
+  text-align: center;
+  background-image: url("http://communications.oregonstate.edu/sites/communications.oregonstate.edu/files/social_background.jpeg");
+  -webkit-animation: animatedBackground 20s linear infinite;
+          animation: animatedBackground 20s linear infinite;
+}
+.hero p {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+  -webkit-text-shadow:0 0 10px rgb(245,236,18);
+}
+.hero  p>span {
+  font: 700 5em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  clear: both;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 1);
+  /* Clip Background Image */
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  -webkit-background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+      text-shadow:0 0 80px rgba(255,215,0,0.5);
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  #textContent{
+      overflow: hidden;
+  }
+
+    .hero p {
+
+      font-size: 0.7em;
+   -webkit-animation:fontDown 1s ;  /* Safari 4.0 - 8.0 */
+   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+   animation: fontDown 1s ;
+   animation-fill-mode: forwards;
+    }
+    .hero p span{
+      font: 700 4em/1 "Oswald", sans-serif;
+    }
+
+  }
+
+  @-webkit-keyframes fontDown {
+    0% {
+      font-size: 1em;
+    }
+    50%{
+     transform: rotateY(45deg);
+    }
+    100% {
+    font-size: 0.7em;
+    }
+  }
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 600px 0;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 600px 0;
+  }
+}
+#content{
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  color:white;
+  bottom: 0;
+}
+
+                             ////////////////
+                    //////////////////////////////////
+           ////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+#filter{
+	position:absolute;
+	z-index:1;
+	width:auto;
+	height:auto;
+	opacity: 0.3;
+	background:black;
+}
+
+#sn_reg a{
+  position:relative;
+  width: 100%;
+  height: auto;
+  padding: 200px;
+  background-image: url(../images/space.jpg);
+
+}
+
+
+                       /*********редагування форми для реєстрації************/
+
+											 /*custom font*/
+											 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+											 /*basic reset*/
+											 * {margin: 0; padding: 0;}
+
+											 #reg {
+											 	height: 100%;
+											 	/*Image only BG fallback*/
+
+											 	/*background = gradient + image pattern combo*/
+											 	background:
+											 		radial-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+											 }
+
+											 #reg {
+											 	font-family: montserrat, arial, verdana;
+											 }
+											 /*form styles*/
+											 #msform {
+											 	width: 400px;
+											 	margin: 50px auto;
+											 	text-align: center;
+											 	position: relative;
+											 }
+											 #msform fieldset {
+											 	background: white;
+											 	border: 0 none;
+											 	border-radius: 3px;
+											 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+											 	padding: 20px 30px;
+											 	box-sizing: border-box;
+											 	width: 80%;
+											 	margin: 0 10%;
+
+											 	/*stacking fieldsets above each other*/
+											 	position: relative;
+											 }
+											 /*Hide all except first fieldset*/
+											 #msform fieldset:not(:first-of-type) {
+											 	display: none;
+											 }
+											 /*inputs*/
+											 #msform input, #msform textarea {
+											 	padding: 15px;
+											 	border: 1px solid #ccc;
+											 	border-radius: 3px;
+											 	margin-bottom: 10px;
+											 	width: 100%;
+											 	box-sizing: border-box;
+											 	font-family: montserrat;
+											 	color: #2C3E50;
+											 	font-size: 13px;
+											 }
+											 /*buttons*/
+											 #msform .action-button {
+											 	width: 100px;
+											 	background: #27AE60;
+											 	font-weight: bold;
+											 	color: white;
+											 	border: 0 none;
+											 	border-radius: 1px;
+											 	cursor: pointer;
+											 	padding: 10px 5px;
+											 	margin: 10px 5px;
+											 }
+											 #msform .action-button:hover, #msform .action-button:focus {
+											 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+											 }
+											 /*headings*/
+											 .fs-title {
+											 	font-size: 15px;
+											 	text-transform: uppercase;
+											 	color: #2C3E50;
+											 	margin-bottom: 10px;
+											 }
+											 .fs-subtitle {
+											 	font-weight: normal;
+											 	font-size: 13px;
+											 	color: #666;
+											 	margin-bottom: 20px;
+											 }
+											 /*progressbar*/
+											 #progressbar {
+											 	margin-bottom: 30px;
+											 	overflow: hidden;
+											 	/*CSS counters to number the steps*/
+											 	counter-reset: step;
+											 }
+											 #progressbar li {
+											 	list-style-type: none;
+											 	color: white;
+											 	text-transform: uppercase;
+											 	font-size: 9px;
+											 	width: 33.33%;
+											 	float: left;
+											 	position: relative;
+											 }
+											 #progressbar li:before {
+											 	content: counter(step);
+											 	counter-increment: step;
+											 	width: 20px;
+											 	line-height: 20px;
+											 	display: block;
+											 	font-size: 10px;
+											 	color: #333;
+											 	background: white;
+											 	border-radius: 3px;
+											 	margin: 0 auto 5px auto;
+											 }
+											 /*progressbar connectors*/
+											 #progressbar li:after {
+											 	content: '';
+											 	width: 100%;
+											 	height: 2px;
+											 	background: white;
+											 	position: absolute;
+											 	left: -50%;
+											 	top: 9px;
+											 	z-index: -1; /*put it behind the numbers*/
+											 }
+											 #progressbar li:first-child:after {
+											 	/*connector not needed before the first step*/
+											 	content: none;
+											 }
+											 /*marking active/completed steps green*/
+											 /*The number of the step and the connector before it = green*/
+											 #progressbar li.active:before,  #progressbar li.active:after{
+											 	background: #27AE60;
+											 	color: white;
+											 }
+
+
+
+
+
+/*
+ #reg{
+	/*background: url(../images/fon.jpg) ;*/
+/*	background:rgba(0,0,0,.5);
+
+}
+h2{
+	float:left;
+	font-size: 1.8em;
+	color:#c90;
+	text-align:center;
+	text-shadow: 0 1px 1px rgba(255,255,255,.9);
+}
+div.form {
+	position:relarive;
+	font-size: 1.2em;
+	font-weight:bold;
+	text-align:center;
+	color:#c90;
+	border:1px solid #9c6;
+	margin:0 auto;
+	padding:10px
+
+}*/
+
+             /*********редагування форми Моя сторінка************/
+#My_page{
+  background-color: #000000;
+  margin: 0px;
+  overflow: scroll;
+  /*background-image: radial-gradient(ellipse farthest-corner at center top, #23233f 0%, #000000 60%);*/
+   background: url(../images/fon5.png) repeat;
+   background-position: 50% 120%;
+   background: url(../images/geom_fon_service.jpg);
+   background-size:cover;
+
+}
+#My_page_main{
+	width:60%;
+  height: 100%;
+	margin-left:20%;
+	padding-left:5%;
+	position:absolute;
+  /*background: url(../images/cabine.png) bottom no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;*/
+	/*background-color:rgba(255,255,255,1);*/
+  /*border: 2px solid white;*/
+
+	text-align: center;
+	float:left;
+	font:normal  1.2em Orator Std;
+  line-height: 1.333em; /* 16px/12 =1.33em*/
+  margin-bottom: 1.25em; /* 15px/12 =1.25em*/
+	/*margin-top:4em;*/
+}
+
+/*#cabine{
+position: relative;
+  border: 2px solid white;
+  width: auto;
+  height: auto;
+  bottom: 0;
+  background: url(../images/cabine.png);
+
+}
+/*#My_page_background{
+	position:relarive;
+	background:#fff;
+	opacity:0.5;
+}*/
+#My_page_header{
+  position: relative;
+	text-align: justify;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding-left: auto;
+	z-index:10;
+  height:0;
+	background:#ccc;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.78+1,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.78) 1%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.78) 0%,rgba(0,0,0,0.78) 1%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.78) 0%,rgba(0,0,0,0.78) 1%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+	box-shadow: inset 0 2px 2px rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.15);
+}
+#My_page_header #menu_ul>li{
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+33,0+100 */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 33%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 33%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+ #My_page_column1  #menu{
+ display:block;
+	position:relarive;
+	font-size:0.8em;
+	}
+ #My_page_column1{
+	position:relarive;
+    float:left;
+	padding:0;
+	/*background-image: radial-gradient(ellipse farthest-corner at center top, #23233f 0%, #000000 100%);*/
+/*background: url(../images/geom_fon_service.jpg);
+background-size:cover;*/
+}
+#My_page_message{
+	position:relative;
+  float:left;
+	height:100%;
+	margin-left:2%;
+	padding:0;
+}
+#massegeUser{
+  width: 700px;
+  background: white;
+
+}
+#messageImg img{
+  position: relative;
+  background-size:cover;
+  float: left;
+  margin-left: 0;
+  /*border:2px solid white;*/
+  max-width: 150px;
+}
+#messageUl{
+  float: right;
+  background:silver;
+  width: 545px;
+}
+#My_page_avatar{
+  position:relarive;
+	/*/background-image: radial-gradient(ellipse farthest-corner at center top, #23233f 0%, #000000 100%);*/
+	margin-bottom:3%;
+	/*border:2px solid black;*/
+	padding:0 2%;
+  z-index: 1;
+	padding-bottom: 10%;
+  transition: all 0.5s ease-out;
+   -webkit-transition: opacity 0.5s ease-out;
+}
+
+.hi_my_page {
+
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  clear: both;
+  height: 50px;
+  padding: 2%;
+
+  color: black;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+24,0+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+55,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 55%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 55%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.hi_my_page p{
+  margin-top: 20px;
+  font-size: 200%;
+}
+
+
+#My_page_avatar:hover:after{
+	  opacity: 1;
+  }
+#My_page_avatar	 #menu_ul > li {
+	border: .5px solid white;
+}*/
+#user_login_pasword{
+	position:relarive;
+	background-image: radial-gradient(ellipse farthest-corner at center top, #23233f 0%, #000000 100%);
+	border:2px solid black;
+	padding:0 2%;
+	transition: background-image 1s ease-in-out;
+  text-align: center;
+}
+#user_login_pasword:hover{
+	   /* background-image: radial-gradient(ellipse farthest-corner at center bottom, #23233f 0%, #000000 100%);*/
+}
+#My_page_main p{
+ color: white;
+font-family: 'Sarpanch', sans-serif;
+/*-webkit-animation: blue_neon 1.5s ease-in-out infinite alternate;
+ -moz-animation: blue_neon 1.5s ease-in-out infinite alternate;
+ animation: blue_neon 1.5s ease-in-out infinite alternate;*/
+     text-shadow: 1px 1px 2px white, 0 0 1em #182387;
+}
+
+#radio{
+  position: relative;
+  float: right;
+}
+
+.imp{
+  font-size: 2em;
+  color: white;
+}
+
+/* ************************************************************* */
+
+/********Анімація меню*****/
+#header{
+	position: fixed;
+	text-align: justify;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding-left: auto;
+	z-index:1400;
+  height:auto;
+	background:#ccc;
+
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.78) 1%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.78) 0%,rgba(0,0,0,0.78) 1%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.78) 0%,rgba(0,0,0,0.78) 1%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+	box-shadow: inset 0 2px 2px rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.15);
+
+}
+
+
+		#logo{
+		display:block;
+		position:relarive;
+		 margin-top:-0.8em;
+		 height: 3.5em;
+
+
+	 }
+
+
+#header li {
+
+	display: inline-block; /* позволяем vertical-align выравнивать себя по вертикали */
+}
+
+	#menu_ul > li {
+		float: left;
+		position: relative;
+		border-right: 1px solid rgba(0,0,0,.1);
+		border-left: 1px solid rgba(0,0,0,.1);
+		box-shadow: 1px 0 0 rgba(255,255,255,.25);
+		perspective: 1000px;
+	}
+  #menu_ul>li{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,000000+52,000000+100&0+0,1+52,0+100 */
+  background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(0,0,0,1) 52%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(0,0,0,1) 52%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(0,0,0,1) 52%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+
+	#menu_ul > li:first-child {
+
+		border-left: 1px solid rgba(255,255,255,.25);
+		box-shadow: -1px 0 0 rgba(0,0,0,.1), 1px 0 0 rgba(255,255,255,.25);
+	}
+
+
+
+	#menu a { /*стилізація головного меню*/
+	  display:block;
+		position: relarive;
+		z-index: 10;
+		padding: 13px 20px 13px 20px;
+		text-decoration: none;
+    margin:0 auto;
+		color: rgba(75,75,75,1);
+		line-height: 1;
+		font-weight: 600;
+		font-size: 1.3em;
+		letter-spacing: -.05em;
+		background: transparent;
+		text-shadow: 0 1px 1px rgba(255,255,255,.9);
+		transition: all .25s ease-in-out;
+
+	}
+
+	#menu_ul > li:hover > a { /*стилізація головного меню*/
+		background: #333;
+		color: rgba(0,223,252,1);
+		text-shadow: none;
+    background: url(../images/geom_fon_service.jpg);
+    background-size: cover;
+	}
+
+	#menu_ul li ul  {  /*випадаюче меню*/
+		position: fixed;
+		z-index: 1;
+		padding: 0;
+		opacity: 0;
+		visibility: hidden;
+		border-bottom-left-radius: 40px;
+		border-bottom-right-radius: 40px;
+		background: transparent;
+		overflow: hidden;
+		transform-origin: 50% 0%;
+	}
+	#menu_ul li ul li{  /*розмір тесту на всю ширину випадаючого поля*/
+	width: 100%;
+		}
+
+
+	#menu li:hover ul{ /*стилізація випадаючого меню*/
+
+		display: block ;
+		padding: 15px 0px ;
+		background: #333;
+		opacity: 1;
+		visibility: visible;
+		box-shadow: 0px 10px 10px rgba(0,0,0,.5);
+		animation-name: swingdown;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+    z-index: 99;
+    background: url(../images/geom_fon_service.jpg);
+    background-size: cover;
+		}
+
+		#menu li:hover #login{ /*стилізація випадаючого меню Логін*/
+		display: block ;
+		width: 600px;
+		padding: 15px 0px ;
+		background: #333;
+		opacity: 1;
+		visibility: visible;
+		box-shadow: 0px 10px 10px rgba(0,0,0,.5);
+		animation-name: swingdown;
+		animation-duration: 1s;
+		animation-timing-function: ease;
+		text-align:center;
+    background: url(../images/geom_fon_service.jpg);
+    background-size: cover;
+		}
+
+	@keyframes swingdown {
+		0% {
+			opacity: .99999;
+			transform: rotateX(90deg);
+		}
+
+		30% {
+			transform: rotateX(-40deg) rotateY(70deg);
+			animation-timing-function: ease-in-out;
+		}
+
+		65% {
+			transform: rotateX(40deg) rotateY(-3deg);
+			animation-timing-function: ease-in-out;
+		}
+
+		100% {
+			transform: rotateX(0);
+			animation-timing-function: ease-in-out;
+		}
+	}
+
+	#menu_ul li li a { /*стилізація тексту у випадаючому меню*/
+		padding-left: 1 5px;
+		font-weight: 1.3em;
+		font:normal 1.3em Orator Std;
+		color: #ddd;
+		text-shadow: none;
+
+		transition: all .15s linear;
+	}
+
+	#menu_ul li li a:hover {
+		color: rgba(0,223,252,1);
+		border-top: dotted 1px rgba(255,255,255,.15);
+		border-bottom: dotted 1px rgba(255,255,255,.15);
+		background: rgba(0,223,252,.02);
+	}
+}
+	/**************Кінець анімації*****************/
+
+		p{
+			margin-left:20px;
+    }
+
+
+
+/*******************Центрування хедера***********/
+		#header	ul {
+			  margin: 0;
+			  padding: 0;
+			  list-style: none;
+			}
+
+				#menu_ul {
+			  position: relative;
+			  float: left;
+			  left: 50%;
+
+			}
+			#menu_ul>li {
+			  position: relative;
+			  float: left;
+			  right: 50%;
+			  margin: 0 10px;
+			}
+/**************************************************/
+
+
+#menu ul li,#menu2 ul li{
+	font:normal 18px Orator Std;
+	color:#ffccff;
+
+  margin:0 auto;
+	list-style-type: none;
+}
+
+/******Випадаюче меню верифікації або реєстрації*******/
+
+#login_main_container
+{
+width: 500px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.login_container {
+	float: left;
+	margin-left: -32px;
+}
+.registration_container {
+	float: right;
+	margin-right: -32px;
+}
+.separat_line {
+	float: left;
+	height: 200px;
+	margin-right: 10px;
+	border-right: 1px solid rgba(255, 255, 255, 0.49);
+	background: -moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+	height: 160px;
+	left: 50px;
+	margin-top: 19px;
+	position: relative;
+	box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.27);
+}
+
+/*****************Іконки реєстрації*******************/
+.icon_registration {
+position: relative;
+width: 200px;
+height: 180px;
+background-size: 115px 115px;
+background-position: 42px -3px;
+background-repeat: no-repeat;
+}
+
+.icon_registration>a{
+  display:block;
+  position: relative;
+  float: left;
+  width: 1px;
+  height: 1px;
+
+}
+.icon_registration>a img{
+  display:block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  float: left;
+  outline:none;
+  border:none;
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+}
+/***********************************************************/
+/* Form Styles*/
+.login_form_header_text {
+color: #fff;
+padding-bottom: 10px;
+}
+
+input.fill_form_input {
+background: #fff;
+border: 2px solid #888;
+border-radius: 5px;
+box-shadow: none;
+color: #515456;
+font-size: 12px;
+height: 10px;
+line-height: 22px;
+padding: 10px;
+width: 100%;
+padding: 13px 13px 13px 54px;
+margin-bottom: 10px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+border: 3px solid rgba(0,0,0,0);
+}
+div.login_link{
+padding-top: 20px;
+}
+div.registration_botton{
+	padding-top: 40px;
+}
+.ramember_text {
+color: #fff;
+bottom: 10px ;
+font-size: 20px;/*******************************/
+padding-left: 5px ;
+position: relative;
+}
+.ramember_text:link {
+color: #fff;
+}
+
+.line_icon_left {
+background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgba(249, 249, 249, 0)), color-stop(1, rgba(233, 233, 233, 0.12)) );
+background: -moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+border: 1px solid rgba(102, 102, 102, 0.3);
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+height: 32px;
+width: 35px;
+position: absolute;
+margin-top: -1px;
+box-shadow: 0 0px 12px -4px rgba(0, 0, 0, 0.66);
+}
+
+/* Form Button Styles*/
+.login_form_batton_style {
+-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+box-shadow:inset 0px 1px 0px 0px #ffffff;
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+background-color:#f9f9f9;
+border-radius: 5px;
+text-indent:0px;
+border:1px solid #dcdcdc;
+display:inline-block;
+color:#666666;
+font-size: 15px !important;
+font-weight:bold;
+font-style:normal;
+height:30px;
+line-height:20px;
+width: 215px;
+text-decoration:none;
+text-align:center;
+text-shadow:1px 1px 0px #ffffff;
+}
+.login_form_batton_style:hover {
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+}
+.login_form_batton_style:active {
+position:relative;
+top:1px;
+}
+
+
+/**************************Футер**********************************/
+footer{
+    height: 245px;
+    color:#ccc;
+    font-size:12px;
+    position:relative;
+    z-index:-2;
+      bottom:0;
+
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f1f1f+0,303439+100 */
+    background: rgb(31,31,31); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(31,31,31,1) 0%, rgba(48,52,57,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(31,31,31,1) 0%,rgba(48,52,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(31,31,31,1) 0%,rgba(48,52,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#303439',GradientType=0 ); /* IE6-9 */
+
+}
+footer.bord{
+  z-index:2;
+
+}
+/* Установите ширину самого крайнего UL’а, отцентрируйте его и зафиксируйте относительно окна */
+
+footer > ul{
+    width:960px;
+    position:fixed;
+    left:50%;
+    bottom:0;
+    margin-left:-480px;
+    padding-bottom: 60px;
+    z-index:-1;
+}
+
+/* Четыре колонки ссылок */
+
+footer > ul > li{
+    width:25%;
+    float:left;
+}
+/* Hover Shadow */
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@-webkit-keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+@keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+footer > ul > li {
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+footer > ul > li:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+footer > ul > li:hover, footer > ul > li:focus, footer > ul > li:active {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+footer > ul > li:hover:before, footer > ul > li:focus:before, .footer > ul > li:active:before {
+  opacity: .4;
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+  -webkit-animation-name: hover-shadow;
+  animation-name: hover-shadow;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+footer ul{
+    list-style: none;
+}
+
+/* Ссылки */
+
+footer > ul > li ul li{
+    margin-left:43px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight:bold;
+    line-height:1.8;
+}
+
+footer > ul > li ul li a{
+    text-decoration: none !important;
+    color:#7d8691 !important;
+}
+
+footer > ul > li ul li a:hover{
+    color:#ddd !important;
+}
+/* Логотип компании */
+
+footer a.logo_footer{
+    color: #e4e4e4 !important;
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    margin-left: 16px;
+    display: inline-block;
+    margin-top: 7px;
+}
+
+footer a.logo_footer i{
+    font-style: normal;
+    position: absolute;
+    width: 75px;
+    display: block;
+    left: 75px;
+    top: 18px;
+    font-size: 12px;
+    color: #999;
+}
+
+footer a.logo_footer:before{
+    content: '';
+    display: inline-block;
+    background: url('../images/logo.png') no-repeat ;
+    margin-right: 5px;
+    width: 69px;
+    height: 53px;
+    vertical-align: text-top;
+}
+footer p{
+    width: 90%;
+    margin-right: 10%;
+    padding: 9px 0;
+    line-height: 18px;
+    background-color: #058cc7;
+    font-weight: bold;
+    font-size: 14px;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 0 1px rgba(0,0,0,0.1);
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+    opacity:0.9;
+    cursor:default;
+
+
+
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+}
+
+footer > ul > li:hover p{
+    opacity:1;
+}
+
+footer p:before{
+    content: '';
+    display: inline-block;
+    background: url('images/logo.png') no-repeat;
+    width: 16px;
+    height: 18px;
+    margin: 0 12px 0 15px;
+    vertical-align: text-bottom;
+}
+footer p.home{
+    /*background-color:rgba(128,0,0,0.3);*/
+    opacity: 0.7;
+
+    background-image:-webkit-linear-gradient(top, #0096d6, #3a3475);
+    background-image:-moz-linear-gradient(top, #0096d6, #008ac6);
+    background-image:linear-gradient(top, #0096d6, #008ac6);
+}
+
+footer p.home:before{
+    background-position: 0 -110px;
+}
+
+footer p.services{
+    background-color: #00b274;
+opacity: 0.7;
+    background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
+    background-image:-moz-linear-gradient(top, #00b274, #00a46b);
+    background-image:linear-gradient(top, #00b274, #00a46b);
+
+}
+
+footer p.services:before{
+    background-position: 0 -129px;
+}
+
+footer p.reachus{
+    background-color: #d75ba2;
+opacity: 0.7;
+    background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
+    background-image:-moz-linear-gradient(top, #d75ba2, #c75496);
+    background-image:linear-gradient(top, #d75ba2, #c75496);
+}
+
+footer p.reachus:before{
+    background-position: 0 -89px;
+}
+
+footer p.clients{
+    background-color: #e9ac40;
+opacity: 0.7;
+    background-image:-webkit-linear-gradient(top, #e9ac40, #d89f3b);
+    background-image:-moz-linear-gradient(top, #e9ac40, #d89f3b);
+    background-image:linear-gradient(top, #e9ac40, #d89f3b);
+}
+
+footer p.clients:before{
+    background-position: 0 -69px;
+}
+
+/***************************Адаптивний дизай********************************/
+/***********************************************Мобільне меню**************/
+.menu-button-container {
+  display:none;
+	margin-left: 50%;
+	margin-top: 2%;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-button, .menu-button::before, .menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top:0px;
+  transform: rotate(-405deg);
+}
+/************************************************************************/
+
+/******************************************1920**(1920x1080)****************************/
+@media screen and (max-width:1920px) {
+
+   }
+/******************************************1600**(1600x900)****************************/
+ @media screen and (max-width: 1600px) {
+
+	    #menu a{
+	       font-size: 1.2em;
+	    }
+
+	    /*MyPage*/
+	    #My_page_header{
+
+	    padding-left:3%;
+	    }
+      #menu li:hover #login{ /*стилізація випадаючого меню Логін*/
+        margin-left: -50%;
+        width: 560px;
+      }
+	 }
+/********************************************1366px**(1366x768)***************************************/
+	@media screen and (max-width:1366px) {
+			#menu li:hover #login{
+        width: 560px;
+				margin-left: -498px;
+
+			}
+	 }
+	 /********************************************1280px**(1280x1024)***************************************/
+	@media screen and (max-width:1281px){
+    #menu a{
+   		font-size: 1em;
+    }
+	}
+/******************************************1080**(1920x1080)****************************/
+@media screen and (max-width:1080px) {
+	#menu a{
+ 		font-size: 0.82em;
+  }
+
+	#menu li:hover #login{ /*стилізація випадаючого меню Логін*/
+    margin-left: -457px;
+   	width: 560px;
+	}
+	#menu_ul li li a { /*стилізація тексту у випадаючому меню*/
+		font-weight: 1em;
+		font:normal 1em Orator Std;
+	}
+}
+/******************************************900**(1600x900)****************************/
+
+
+@media screen and (max-width: 900px) {
+  footer{
+    position: absolute;
+    display: none;
+  /*  height: 300px;
+overflow-x: scroll;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f1f1f+0,303439+100 */
+  /*  background: rgb(31,31,31); /* Old browsers */
+  /*  background: -moz-linear-gradient(top,  rgba(31,31,31,1) 0%, rgba(48,52,57,1) 100%); /* FF3.6-15 */
+  /*  background: -webkit-linear-gradient(top,  rgba(31,31,31,1) 0%,rgba(48,52,57,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  /*  background: linear-gradient(to bottom,  rgba(31,31,31,1) 0%,rgba(48,52,57,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#303439',GradientType=0 ); /* IE6-9 */
+
+
+  }
+/*footer ul{
+      float: left;
+
+}
+  footer  ul>li{
+
+
+
+
+
+      bottom:0;
+
+  }*/
+
+ /************************************************************************************************/
+
+  #menu li:hover #login{
+      top:-200px;
+      width: 300px;
+  }
+  #login_main_container
+  {
+  top:-600%;
+  width: 100px;
+  display: block;
+  margin-left: 50px;
+  margin-right: 50%;
+
+}
+
+  #login_container{
+    width: 200px;
+    position: relative;
+    float: left;
+  }
+  .separat_line{
+  display: none;
+  visibility:hidden;
+  }
+
+.icon_registration #facebook{
+  display: block;
+  clear: both;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.icon_registration #google{
+    display: block;
+  clear: both;
+  margin: 20px;
+
+}
+#login li p{
+  font-size: 10em ;
+  margin: 20px;
+}
+#login li>a{
+  margin: 10px;
+  font-size: 15em !important;
+}
+.login_form_batton_style{
+  width: 100px;
+}
+.logtext a{
+  font-size: 1em !important;
+  width: 100px;
+}
+ /************************************************************************************************/
+
+	.menu-button-container {
+		 display: flex;
+ }
+		#menu {
+		  position: relative;
+		   top: 0;
+		   margin-top: -70px;
+       width: 45%;
+       height: 100%;
+		   left: 7%;
+		   flex-direction: column;
+		   justify-content: center;
+		   align-items: center;
+			 padding: 0;
+		 }
+
+		 #menu_ul{
+			 top: 0;
+			left: 35px;
+			 flex-direction: column;
+			width: 60%;
+			justify-content: center;
+			align-items: center;
+		 }
+     #menu_ul li ul{
+       left: 100%;
+       top:-5%;
+     }
+ #menu_ul > li a{
+   width: 100%;
+
+ }
+ #menu_ul li ul li{
+   border: none;
+      text-align: left;
+      font-size: 0.9em;
+ }
+ /*#menu_ul #logo{
+   width: 100px;
+   text-align: center;
+ }*/
+     #menu_ul > li:hover{ /*стилізація головного меню*/
+
+       background: #333;
+       color: rgba(0,223,252,1);
+       text-shadow: none;
+     }
+#menu-toggle:checked ~ #menu{
+	 margin-top: 50px;
+}
+
+#menu-toggle ~ #menu li{
+
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#menu-toggle:checked ~ #menu li{
+  border: 1px solid #333;
+  height: 2.6em;
+
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+#menu_ul > li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  color: white;
+  background-color: #222;
+}
+
+#menu_ul > li:not(:last-child){
+  border-bottom: 1px solid #444;
+ }
+ #menu li:hover #login{ /*стилізація випадаючого меню Логін*/
+   margin-left:0;
+   margin-top: -70px;
+   font-size: 0.1em;
+    width: 180px;
+ }
+ #menu_ul li li a { /*стилізація тексту у випадаючому меню*/
+   font-weight: 60%;
+   font:normal 60% Orator Std;
+ }
+
+ .ramember_text {
+ font-size: 10em !important;/*******************************/
+ padding-left:0 ;
+ }
+ .login_form_header_text {
+font-size: 7em !important;
+margin-top: 20px;
+ }
+ .registration_container {
+ 	float: right;
+ }
+ .icon_registration {
+ position: relative;
+ width: 200px;
+ height: 100px;
+ background-size: 115px 115px;
+ background-position: 42px -3px;
+ background-repeat: no-repeat;
+ }
+
+ .hi_my_page {
+   margin-top: -20px;
+   height: 60px;
+
+ }
+ .hi_my_page p{
+   margin-top: 30px;
+font-size: 100%;
+ }
+#menu_ul .current{
+  position: absolute;
+  left: -80px;
+  top:30px;
+}
+#My_page_avatar	 #menu_ul > li {
+	border: .5px solid white;
+}
+#My_page_avatar	 #menu_ul > li:hover {
+	border: 1px solid black;
+  background:none;
+}
+}
+
+/******************************480**(320x568)**iPhone5****************************/
+@media screen and (max-width: 480px) {
+
+  #menu_ul{
+    top: 0;
+   left: 35px;
+    flex-direction: column;
+   width: 80%;
+   justify-content: center;
+   align-items: center;
+  }
+#menu li:hover #lang{
+    margin-top: -60px;
+}
+#menu li:hover #login{ /*стилізація випадаючого меню Логін*/
+  margin-left:0;
+  margin-top: -70px;
+  font-size: 0.1em;
+   width: 280px;
+}
+
+}
+/******************************320**(320x568)**iPhone5****************************/
+@media screen and (max-width: 320px) {
+.menu-button-container {
+	margin-left: 47%;
+	margin-top: 5%;
+}
+#filter{
+	opacity: 0.3;
+}
+#menu li:hover #login{ /*стилізація випадаючого меню Логін*/
+  margin-left: 0;
+  font-size: 0.1em;
+width: 170px;
+}
+}
+
+
+/*********************footer****************/
+
+
+/*footer {
+	position: relative;
+	width: 100%;
+	background:black;
+	overflow: hidden;
+	height:30em;
+	background-size: cover;
+	background-position: center center;
+	z-index: 10;
+}
+
+footer{
+	background-image: url(../images/space.jpg);
+
+}*/
+
+
+
+/*@media screen and (max-width: 1300px) {
+	#menu{
+	padding-left:15%;
+	}
+   #menu a{
+      font-size: 1.2em;
+   }
+
+   /*MyPage*/
+  /* #My_page_header{
+   padding-left:3%;
+   }
+}
+@media screen and (max-width: 1200px) {
+	#menu{
+	padding-left:10%;
+	}
+   #menu a{
+      font-size: 1.2em;
+   }
+
+   /*MyPage*/
+  /* #My_page_header{
+   padding-left:3%;
+   }
+}
+@media screen and (max-width: 1050px) {
+	#menu{
+	padding-left:10%;
+	}
+   #menu a{
+      font-size: 0.8em;
+   }
+
+   /*MyPage*/
+/*   #My_page_header{
+   padding-left:3%;
+   }
+}*/
