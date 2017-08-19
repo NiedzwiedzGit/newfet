@@ -183,9 +183,17 @@ print("</html>");*/
 					<li><a href="portfolio.php?foto_folder=portraits"><?=Dict::_('H_fm2')?></a></li>
 					<li><a href="portfolio.php?foto_folder=art_work"><?=Dict::_('H_fm3')?></a></li>
           <?PHP
+          error_reporting( E_ERROR );
           folderMenu();
 function folderMenu(){
+
+$test= scandir('./gallery');
+//print_r($test);
+if (empty($test)){
+$directory = '../gallery';
+}else{
 $directory = './gallery';
+}
 //$directory = 'gallery/'.$_GET['foto_folder'];
 $file_parts=array();
 $ext='';

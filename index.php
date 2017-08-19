@@ -59,7 +59,7 @@
 	<section id="slider" class="container">
 		<ul class="slider-wrapper">
 		<li class="current-slide">
-			<img src="http://i9.photobucket.com/albums/a88/creaticode/1_zpsc6871490.jpg" title="" alt="">
+			<img src="./gallery/night_photo/sity_2.jpg" title="" alt="">
 
 			<div class="caption">
 				<h2 class="slider-title">Diseño web</h2>
@@ -68,7 +68,7 @@
 		</li>
 
 		<li>
-			<img src="http://i9.photobucket.com/albums/a88/creaticode/2_zps6ccd36bd.jpg" title="" alt="">
+			<img src="./gallery/night_photo/glases.jpg" title="" alt="">
 
 			<div class="caption">
 				<h2 class="slider-title">Diseño Responsive</h2>
@@ -77,7 +77,7 @@
 		</li>
 
 		<li>
-			<img src="./gallery/art_work/DSC_1367_1.jpg" title="" alt="">
+			<img src="./gallery/night_photo/DSC_1367_1.jpg" title="" alt="">
 
 			<div class="caption">
 				<h2 class="slider-title">Identidad Corporativa</h2>
@@ -86,7 +86,7 @@
 		</li>
 
 		<li>
-			<img src="http://i9.photobucket.com/albums/a88/creaticode/3_zps70e4fcc5.jpg" title="" alt="">
+			<img src="./gallery/night_photo/DSC_2394.jpg" title="" alt="">
 
 			<div class="caption">
 				<h2 class="slider-title">Desarrollo Web</h2>
