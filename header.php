@@ -20,9 +20,7 @@
            echo $_SESSION['str2'];
                 echo $_SESSION['id'];*/
               //   generate_code();
-
           //  echo $login;
-
  if (isset($_COOKIE['auto']) and    isset($_COOKIE['login']) and isset($_COOKIE['password']))
             {//если есть    необходимые переменные
                      if ($_COOKIE['auto'] == 'yes') { // если    пользователь желает входить автоматически, то запускаем сессии
@@ -30,13 +28,10 @@
                                 $_SESSION['login']=$_COOKIE['login'];//сессия с логином
                                 $_SESSION['id']=$_COOKIE['id'];//идентификатор    пользователя
                               }
-
                      }
-
 if    (!empty($_SESSION['login']) and !empty($_SESSION['password']))
             {
             //если существует логин и пароль в сессиях, то проверяем их и    извлекаем аватар
-
             $login    = $_SESSION['login'];
             $password    = $_SESSION['password'];
             $result    = mysqli_query($db,"SELECT id,avatar FROM users WHERE login='$login' AND    password='$password'");
@@ -72,18 +67,15 @@ print("</head>");
 print("<body>
 </body>");
 print("</html>");*/
-
 ?>
 <html >
   <head>
+    <meta charset="utf-8">
     <script>
     function showContent(link) {
-
         var cont = document.getElementById('wraperIndex');
         var loading = document.getElementById('loading');
-
         cont.innerHTML = loading.innerHTML;
-
         var http = createRequestObject();
         if( http )
         {
@@ -102,7 +94,6 @@ print("</html>");*/
             document.location = link;
         }
     }
-
     // создание ajax объекта
     function createRequestObject()
     {
@@ -119,7 +110,7 @@ print("</html>");*/
     }
 </script>
     <title="Dict::_('H_up10')"></title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/prefixfree.min.js"></script>
@@ -127,6 +118,8 @@ print("</html>");*/
         <script src="js/middle.js"></script>-->
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script language="JavaScript" type="text/javascript" src="js/mobile_menu.js"></script>
+      <script language="JavaScript" type="text/javascript" src="js/swimmingWindow.js"></script>
+      <script language="JavaScript" type="text/javascript" src="js/ajaxTest.js"></script>
 
 
     <!--<    <script type="text/javascript" src="js/jquery.js"></script>
@@ -140,7 +133,69 @@ print("</html>");*/
   </head>
 
   <body>
-    <p>Какую страницу желаете открыть?</p><br><br>
+
+    <div id="modal_form"><!-- Сaмo oкнo -->
+      <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+      <!-- Тут любoе сoдержимoе -->
+      <form method='post' action='directorycreater.php'>
+Имя папки:
+
+<input type='text' name='dir'>
+<br>
+<?PHP
+mysqli_query($db,"SET NAMES 'UTF8'");
+$result = mysqli_query($db,"SELECT code,langName FROM languageslist WHERE connection='yes'");
+while($row = mysqli_fetch_array($result))
+{
+  $langName=$row['langName'];
+   $code=$row['code'];
+      echo 'Имя папки '.$langName.':<br> <input type="text" name="'.$code.'"><br><br>';
+      echo $code;
+}
+?>
+<input type='submit' value='Создать папку'>
+</form>
+</div>
+
+
+<div id="modal_form_language"><!-- Сaмo oкнo -->
+  <span id="modal_close_language">X</span> <!-- Кнoпкa зaкрыть -->
+  <!-- Тут любoе сoдержимoе -->
+
+<div class="contentWraper">
+
+ <form id="codeForm" method='post' action='addLangTable.php'>
+       <br>
+       <div id="contentLeng"></div>
+       <input id="addLangButton" type='submit' value='Add language'>
+</form>
+
+
+          <form id="codeForm2" method='post' action='dataLoadTest.php' >
+              <div class="styled-select slate">
+        <select name="taskOption">
+        <option  value="" hidden>Here is the first option2</option>
+         <?PHP
+            mysqli_query($db,"SET NAMES 'UTF8'");
+          $result = mysqli_query($db,"SELECT code,langName FROM languageslist WHERE connection='no'");
+            while($row = mysqli_fetch_array($result))
+             {
+            $langName=$row['langName'];
+               $code=$row['code'];
+        //  echo 'Имя папки '.$langName.':<br> <input type="text" name="'.$code.'"><br><br>';
+          echo'<option id="langCodeFilter value="$code">'.$code.'</option>';
+            }
+            ?>
+            <input id="addLangButton2"  type='submit' value='Filter'>
+          </select>
+          </div>
+        </form>
+
+
+   </div>
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+  <!--  <p>Какую страницу желаете открыть?</p><br><br>
 
    <form>
        <input onclick="showContent('pages/info.php?info=services')" type="button" value="Страница 1">
@@ -153,7 +208,7 @@ print("</html>");*/
 
    <div id="loading" style="display: none">
    Идет загрузка...
-   </div>
+   </div>-->
     <script>
           /* function btnClick() {
                $.getScript('js/jquery.lightbox-0.5.pack.js');   // вызываем скрипт
@@ -172,21 +227,17 @@ print("</html>");*/
 	        <li><a class="" href="index.php"><?=Dict::_('H1')?></a>
 				    <ul>
               <li><form method='post' action='directorycreater.php'>
-Имя папки:
-<br>
-<br>
-<input type='text' name='dir'>
-<br>
-<input type='submit' value='Создать папку'>
+<input id="go" type='submit' value='Создать папку'>
 </form></li>
-					<li><a href="portfolio.php?foto_folder=night_photo" onclick="btnClick()"><?=Dict::_('H_fm1')?></a></li>
+					<li><a href="portfolio.php?foto_folder=night_photo" onclick="btnClick()"><?=Dict::_('H_fm1')?></a>
+
+                   </li>
 					<li><a href="portfolio.php?foto_folder=portraits"><?=Dict::_('H_fm2')?></a></li>
-					<li><a href="portfolio.php?foto_folder=art_work"><?=Dict::_('H_fm3')?></a></li>
+
           <?PHP
           error_reporting( E_ERROR );
           folderMenu();
 function folderMenu(){
-
 $test= scandir('./gallery');
 //print_r($test);
 if (empty($test)){
@@ -208,9 +259,11 @@ $title = implode('.',$file_parts);
 $title = htmlspecialchars($title);
 $nomargin='';
   if(($i+1)%10==0) $nomargin='nomargin';
-  echo '<li><a href="portfolio.php?foto_folder='.$file.'" title="'.$title.'">'.$file.'</a></li>';
+  echo '<li><a class="deleteBotton1" href="portfolio.php?foto_folder='.$file.'" title="'.$title.'">'.Dict::_("$file").'</a><a class="deleteBotton2" href="directorydelete.php?foto_folder='.$file.'" title="'.$title.'">X</a></li>';
   $i++;
 }
+  /*echo '	<li><a href="portfolio.php?foto_folder=art_work"><?=Dict::_("'.$file.'")?></a></li>';
+  echo'"'.$file.'"';*/
 }?>
           <li><a href="video.php"><?=Dict::_('H_fm4')?></a></li>
 					</ul>
@@ -326,11 +379,23 @@ HERE;
 ?>
 					</ul>
 			   </li>
-         <li><a href="sity.html"><?=Dict::_('H7')?></a>
+         <li><a id="langHover" href="sity.html"><?=Dict::_('H7')?></a>
        <ul id="lang">
-      <li><a href="?lang=ru">Русский</a></li>
-      <li><a href="?lang=en">English</a></li>
-      <li><a href="?lang=pl">Polski</a></li>
+         <?php
+         echo '<div id="goLanguage" >Создать папку</div>';
+
+         /*echo '<div id="goLanguage" >Создать папку</div>';
+         echo '<li><form id="langRefresh2"><input id="goLanguage2" type="submit" value="Создать папку2"></form></li>';
+         mysqli_query($db,"SET NAMES 'UTF8'");
+         $result = mysqli_query($db,"SELECT code,langName FROM languageslist WHERE connection='yes'");
+         while($row = mysqli_fetch_array($result))
+         {
+           $langName=$row['langName'];
+            $code=$row['code'];
+               echo '<li><a href="?lang='.$code.'">'.$langName.'</a></li>';
+         }*/
+         ?>
+         <div id="langContent"></div>
       </ul>
      </li>
 	         </ul>
@@ -338,6 +403,5 @@ HERE;
   </div>
 </div>
     <base href="http://localhost/newfet/">
-
   </body>
 </html>

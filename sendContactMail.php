@@ -11,7 +11,7 @@ $result    = mysqli_query($db,"SELECT id,email FROM users WHERE email='$email' A
 $myrow    = mysqli_fetch_array($result);
 
 if (empty($myrow['id']) ){
-  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=19'));  //як приклад як то можна органзувати
+  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=19'));  //як приклад як то можна органзувати
 }
 else{
   $subject = "Contact message from $name";//тема сообщения
@@ -20,6 +20,6 @@ else{
   $headers .= 'Content-type:text/plane; Charset=windows-1251\r\n' . "\r\n";
 
   mail($email, $subject, $message, $headers);//отправляем сообщение
-  exit    ( header('Location: http://localhost/IS_webpage2/newfet/index.php'));  //як приклад як то можна органзувати
+  exit    ( header('Location: http://localhost/newfet/index.php'));  //як приклад як то можна органзувати
 }
   ?>

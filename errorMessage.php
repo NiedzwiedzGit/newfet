@@ -82,7 +82,7 @@ switch ($_GET['errorNum']) {
 
 		<link href="css/errorMessage.css" type="text/css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
-<base href="http://localhost/IS_webpage2/newfet/">
+<base href="http://localhost/newfet/">
 
   </head>
    <body>

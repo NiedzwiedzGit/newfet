@@ -18,14 +18,14 @@
                {
                //если логин    или пароль не действителен
               //  exit("Вход на эту страницу разрешен    только зарегистрированным пользователям!");
-                  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));
+                  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));
                }
             }
             else {
 
             //Проверяем,    зарегистрирован ли вошедший
           //  exit("Вход на эту    страницу разрешен только зарегистрированным пользователям!");
-          exit    (   header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1')); }
+          exit    (   header('Location: http://localhost/newfet/errorMessage.php?errorNum=1')); }
 if (isset($_POST['id'])) { $id=$_POST['id'];}//получаем идентификатор страницы    получателя
             if (isset($_POST['text'])) { $text = $_POST['text'];}//получаем текст сообщения
             if (isset($_POST['recipient'])) {$recipient = $_POST['recipient'];}//логин получателя
@@ -33,7 +33,7 @@ if (isset($_POST['id'])) { $id=$_POST['id'];}//получаем идентифи
             $date = date("Y-m-d");//дата добавления
 if (empty($author) or empty($text) or    empty($recipient) or empty($date)) {//есть ли все необходимые    данные? Если нет, то останавливаем
             //exit ("Вы ввели не всю    информацию, вернитесь назад и заполните все поля");
-            exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=3'));}
+            exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=3'));}
 $text = stripslashes($text);//удаляем обратные слеши
             $text =    htmlspecialchars($text);//преобразование    спецсимволов в их HTML эквиваленты
 

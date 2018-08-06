@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
 include "../header.php";
-
  ?>
  <html>
    <head>
@@ -9,7 +8,7 @@ include "../header.php";
      <link rel="shortcut icon" href="../images/logo.png">
      <title>IS Product</title>
  	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+         <script src="js/prefixfree.min.js"></script>
          <script src="js/mobile_menu.js"></script>
          <script src="js/jquery-scrollto.js"></script>
          <script src="js/fluensScroll.js"></script>

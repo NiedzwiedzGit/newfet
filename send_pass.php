@@ -11,7 +11,7 @@ include    ("header.php");
                      if    (empty($myrow['id']) or $myrow['id']=='') {
                               //если активированного пользователя с таким логином и е-mail    адресом нет
                               //exit ("Пользователя с    таким e-mail адресом не обнаружено ни в одной базе ЦРУ :) <a    href='index.php'>Главная страница</a>");
-                                exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=20'));  //як приклад як то можна органзувати
+                                exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=20'));  //як приклад як то можна органзувати
 
                               }
                      //если пользователь с таким логином и е-мейлом найден,    то необходимо сгенерировать для него случайный пароль, обновить его в базе и    отправить на е-мейл

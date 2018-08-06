@@ -11,7 +11,7 @@ $codeInc=$numOfRow+1;
 //$textVord=$_POST['dir'];
 
 $arrayLangTable = array(); //тассив для запису даних з таблиці  languageslist в ассоцівтивній формі
-$resultLang = mysqli_query($db,"SELECT code,langName FROM languageslist WHERE connection='yes'");
+$resultLang = mysqli_query($db,"SELECT code,langName FROM languageslist");
 while($rowLang = mysqli_fetch_array($resultLang)){
 $codeCountry=$rowLang['code'];
 $langName=$rowLang['langName'];

@@ -6,7 +6,7 @@ if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unse
 if (empty($login) or empty($password)) //если пользователь не ввел логин или пароль, то выдаем ошибку и останавливаем скрипт
     {
   //  exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!");
-      exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=3'));  //як приклад як то можна органзувати
+      exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=3'));  //як приклад як то можна органзувати
     }
     //если логин и пароль введены,то обрабатываем их, чтобы теги и скрипты не работали, мало ли что люди могут ввести
     $login = stripslashes($login);
@@ -30,7 +30,7 @@ $result = mysqli_query($db,"SELECT col FROM mistake WHERE    ip='$ip'");// из�
 if ($myrow['col'] > 2) {
             //если ошибок больше двух, т.е три, то выдаем сообщение.
             //exit("Вы набрали логин или пароль неверно 3 раз. Подождите    15 минут до следующей попытки.");
-              exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=4'));
+              exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=4'));
             }
 $password    = md5($password);//шифруем пароль
             $password    = strrev($password);// для надежности добавим реверс
@@ -62,7 +62,7 @@ else {
             }
 
 //exit ("Извините, введённый вами логин или пароль неверный.");
-  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=5'));
+  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=5'));
             }
             else {
          //если пароли    совпадают, то запускаем пользователю сессию! Можете его поздравить, он вошел!

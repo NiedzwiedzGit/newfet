@@ -17,14 +17,14 @@ if (!empty($_SESSION['login']) and !empty($_SESSION['password']) or !empty($_SES
                {
                //данные    пользователя неверны.
                 //exit("Вход на эту страницу разрешен    только зарегистрированным пользователям!");
-                  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
+                  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
 
                }
             }
             else {
             //Проверяем,    зарегистрирован ли вошедший
           //  exit("Вход на эту    страницу разрешен только зарегистрированным пользователям!");
-            exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
+            exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
         }
             $id2 = $_SESSION['id']; //получаем идентификатор своей страницы
 
@@ -41,6 +41,6 @@ $result = mysqli_query ($db,"DELETE FROM    messages WHERE id = '$id' LIMIT 1");
             echo "<html><head><meta    http-equiv='Refresh' content='5;    URL=page.php?id=".$id2."'></head><body>Ошибка! Ваше сообщение не    удалено. Вы будете перемещены через 5 сек. Если не хотите ждать, то <a    href='page.php?id=".$id2."'>нажмите    сюда.</a></body></html>"; }
 }
             else {//exit("Вы пытаетесь    удалить сообщение, отправленное не вам!");
-                exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=10'));  //як приклад як то можна органзувати
+                exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=10'));  //як приклад як то можна органзувати
             } //если    сообщение отправлено не этому пользователю. Значит, он попытался удалить его,    введя в адресной строке какой-то другой идентификатор
             ?>

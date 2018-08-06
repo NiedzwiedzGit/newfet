@@ -15,24 +15,33 @@
 <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/nanobar.js"></script>
+<script type="text/javascript" src="js/nanobarUse.js"></script>
 <script type="text/javascript" src="js/photo_nav_botton.js"></script>
 <script type="text/javascript" src="js/propResizePicPortfolio.js"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
+  <script>
 
+</script>
 <div id="wraperPortfolio">
 
   <div id="contentP">
     <?php  include ("portfolio_logic_code.php");?>
   </div>
   <div class="pagination">
-    <input type="button"  class="prevP" value="<?=Dict::_('H_portfolio1')?>" />
-    <input type="button"  class="nextP" value="<?=Dict::_('H_portfolio2')?>" /><br>
+ <div id="progressbar"></div>
+  <button  data-hover="&#8592;" class="prevP" value="<?=Dict::_('H_portfolio1')?>"><div>Preveus!</div></button>
+  <button  data-hover="&#8592;" class="nextP" value="<?=Dict::_('H_portfolio2')?>"><div>Next!</div></button>
 
-    <span class="pageNumber"><?=Dict::_('H_portfolio2')?></span>
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<span class="pageNumber"><?=Dict::_('H_portfolio2')?> </span>
+
+
     <script src="js/jquery_pagination2.js"></script>
   </div>
 </div>

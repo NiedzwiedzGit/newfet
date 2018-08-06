@@ -10,7 +10,7 @@
       {
       //если данные    пользователя не верны
        //exit("Вход на эту страницу разрешен  только зарегистрированным пользователям!!!");
-         exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));
+         exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));
       }
    }
  else if (!empty($_SESSION['login']) and !empty($_SESSION['password']))
@@ -28,14 +28,14 @@
                {
                //если данные    пользователя не верны
                 //exit("Вход на эту страницу разрешен    только зарегистрированным пользователям!");
-                  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));
+                  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));
 
                }
             }
             else {
             //Проверяем,    зарегистрирован ли вошедший
           //  exit("Вход на эту    страницу разрешен только зарегистрированным пользователям!");
-            exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));
+            exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));
 
           }
 include("usersHeder.php");

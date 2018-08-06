@@ -1,5 +1,6 @@
 <?php
 $db = mysqli_connect("localhost","root","42091i","is_db");
+mysqli_query($db,"SET NAMES 'UTF8'");
    include_once 'registration/facebook.php';
    require_once("classes/dict.php");
 

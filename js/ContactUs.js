@@ -1,7 +1,7 @@
-$( '.js-input' ).keyup(function() {
-  if( $(this).val() ) {
-     $(this).addClass('not-empty');
+$('.js-input').keyup(function() {
+  if ($(this).val()) {
+    $(this).addClass('not-empty');
   } else {
-     $(this).removeClass('not-empty');
+    $(this).removeClass('not-empty');
   }
 });

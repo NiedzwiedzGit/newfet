@@ -2,11 +2,11 @@
 if (isset($_GET['id'])) {$id =$_GET['id'];} //id "хозяина" странички
 else
 { //exit("Вы зашли на  страницу без параметра!");} //если не указали id, то выдаем ошибку
-    exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=8'));  //як приклад як то можна органзувати
+    exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=8'));  //як приклад як то можна органзувати
 }
 if (!preg_match("|^[\d]+$|", $id))    {
 //exit("<p>Неверный    формат запроса! Проверьте URL</p>");//если id не число, то выдаем    ошибку
-  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=9'));  //як приклад як то можна органзувати
+  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=9'));  //як приклад як то можна органзувати
 
 }
 $impotr="no";
@@ -28,7 +28,7 @@ if (empty($myrow2['id']))
    {
    //Если не действительны (может мы удалили этого пользователя из базы за плохое поведение)
     //exit("Вход на эту страницу разрешен только зарегистрированным пользователям!");
-      exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
+      exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
    }
 }
 else if(!empty($_SESSION['login']) || !empty($_SESSION['link'])){  //якшо виконана реєстрація через соціальну мережу
@@ -60,7 +60,7 @@ else if(!empty($_SESSION['login']) || !empty($_SESSION['link'])){  //якшо в
 else {
 //Проверяем,    зарегистрирован ли вошедший
 //exit("Вход на эту    страницу разрешен только зарегистрированным пользователям!!!!!");
-  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
+  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=1'));  //як приклад як то можна органзувати
 }
 
 $delUserChek = mysqli_query($db,"SELECT * FROM users WHERE id='$id'");
@@ -73,7 +73,7 @@ $myrowChekSn = mysqli_fetch_array($delUserChekSn);
 
 if (empty($myrowChek['login']) && empty($myrowChekSn['login'])) {
 //exit("Пользователя не существует! Возможно он был удален. Или же ви не зареестрировались");
-  exit    ( header('Location: http://localhost/IS_webpage2/newfet/errorMessage.php?errorNum=2'));  //як приклад як то можна органзувати
+  exit    ( header('Location: http://localhost/newfet/errorMessage.php?errorNum=2'));  //як приклад як то можна органзувати
 } //если такого не существует
 
  ?>

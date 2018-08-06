@@ -44,7 +44,6 @@ $(document).ready(function() {
         });
         $('.side_nav').append(scrolToNav[i]); //додаванян в блок з класом .side_nav елементів як
     }
-
     alert($('.maineContent').childNodes.length);
 
 
