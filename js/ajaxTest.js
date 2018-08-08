@@ -21,19 +21,22 @@ $(document).ready(function() { // либо $(function() {
         data: form.serialize(),
             success: function(responce){
                 $('#contentLeng').html(responce); //в этот див нужно вывести "новость"
+                var langRefresh = $('#lang');
+                $.ajax( {
+                //type: "POST",
+                 //url: langRefresh.attr( 'action' ),
+                //data: langRefresh.serialize(),
+                url:"lengReloadList.php",
+                cache: false,
+                    success: function(responce){
+                        $('#lang').html(responce); //в этот див нужно вывести "новость"
+                        alert("sdfsdf");
+                        // $( '#lang' ).add( "<div id='goLanguage'>Создать папку</div>" );
+                    }
+                });
             }
         });
-        var langRefresh = $('#lang');
-        $.ajax( {
-        //type: "POST",
-         //url: langRefresh.attr( 'action' ),
-        //data: langRefresh.serialize(),
-        url:"lengReloadList.php",
-        cache: false,
-            success: function(responce){
-                $('#lang').html(responce); //в этот див нужно вывести "новость"
-            }
-        });
+
 
     });
 

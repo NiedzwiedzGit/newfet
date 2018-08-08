@@ -367,7 +367,7 @@ print <<<HERE
            <li> <p>$hi, $_SESSION[login]</p> </li>
 			<li><a href='exit.php'>$logout</a></li><br>
             <!-- выше ссылка на выход из аккаунта -->
-<!--<li><a href='http://tvpavlovsk.sk6.ru/'>Эта    ссылка доступна только зарегистрированным пользователям</a></li><br>-->
+<!--<li><a href='http://google.com'>Эта    ссылка доступна только зарегистрированным пользователям</a></li><br>-->
             <li><p>$your_avatar:</p></li><br>
             <li><img    alt='$_SESSION[login]' src='$avatar' style="width:150px;"> </li>
             <!-- Выше отображается аватар. Его адрес содержит    переменная $avatar -->
@@ -379,10 +379,11 @@ HERE;
 ?>
 					</ul>
 			   </li>
-         <li><a id="langHover" href="sity.html"><?=Dict::_('H7')?></a>
+         <li id="langHoverLi"><a id="langHover" href="sity.html"><?=Dict::_('H7')?></a>
+
        <ul id="lang">
          <?php
-         echo '<div id="goLanguage" >Создать папку</div>';
+         // echo '<div id="goLanguage" >Создать папку</div>';
 
          /*echo '<div id="goLanguage" >Создать папку</div>';
          echo '<li><form id="langRefresh2"><input id="goLanguage2" type="submit" value="Создать папку2"></form></li>';
@@ -397,6 +398,7 @@ HERE;
          ?>
          <div id="langContent"></div>
       </ul>
+
      </li>
 	         </ul>
          </nav>
