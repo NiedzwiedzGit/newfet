@@ -1,0 +1,24 @@
+{
+  "name": "newfet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://niedzwiedzgit.github.io/newfet",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NiedzwiedzGit/newfet.git"
+  },
+  "author": "Igor Shkliarskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NiedzwiedzGit/newfet/issues"
+  }
+}
