@@ -1,0 +1,143 @@
+.header {
+  position: absolute;
+  z-index: 800;
+  margin-right: 0;
+  width: 40ch;
+  height: 100%;
+  opacity: 0.9;
+  top: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  overflow: hidden;
+  @include easeOut;
+  transform: translate3d(-100%, 0, 0);
+
+  &.show {
+    background-color: #ffffff;
+    transform: translate3d(0, 0, 0);
+  }
+
+  //сonfigure menu
+  .menu_ul {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    float: left;
+    width: 100%;
+    height: 100vh;
+  }
+  .nav-item {
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: center;
+    font-size: 3rem;
+    transform: translate3d(-200%, 0, 0);
+    @include easeOut;
+    &.show {
+      //slide in from left
+      transform: translate3d(0, 0, 0);
+    }
+    &.hide {
+      transform: translate3d(200%, 0, 0);
+    }
+
+    a {
+      color: black;
+    }
+    ul {
+      position: absolute;
+      visibility: hidden;
+    }
+
+    //animation portfolio menu
+    &.sub-menu-portfolio {
+      &.flow {
+        position: relative;
+        @include easeOut;
+        transform: translate3d(0, -600%, 0);
+        color: #eece1e;
+        border-bottom: 3px grey solid;
+      }
+    }
+    .nav-sub-item-container {
+      transform: translate3d(-200%, 0, 0);
+      @include easeOut;
+      &.show {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+        margin-left: 20%;
+        font-size: 2rem;
+      }
+    }
+
+    //animation login menu
+    &.sub-menu-login {
+      &.flow {
+        position: relative;
+        @include easeOut;
+        transform: translate3d(0, -800%, 0);
+        color: #eece1e;
+      }
+    }
+    .login {
+      transform: translate3d(-200%, 0, 0);
+      @include easeOut;
+      &.show {
+        width: 100%;
+
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+
+        font-size: 2rem;
+      }
+    }
+
+    //animation language menu
+    &.sub-menu-language {
+      &.flow {
+        position: relative;
+        @include easeOut;
+        transform: translate3d(0, 0, 0);
+        color: #eece1e;
+      }
+    }
+    .language {
+      transform: translate3d(-200%, 0, 0);
+      @include easeOut;
+      &.show {
+        width: 100%;
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+//deley each nav-item slide by 0.1s
+@for $x from 1 through 6 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
+}
+
+//deley each .nav-sub-item-container slide by 0.1s
+@for $y from 1 through 5 {
+  .nav-sub-item-container li:nth-child(#{$y}) {
+    transition-delay: $y * 0.1s;
+    font-size: 2rem;
+  }
+}
+
+//deley each .nav-sub-item-container slide by 0.1s
+@for $z from 1 through 60 {
+  .langContent > li:nth-child(#{$z}) {
+    transition-delay: $z * 0.1s;
+    font-size: 2rem;
+  }
+}

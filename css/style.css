@@ -16,7 +16,7 @@
 @font-face {
   font-family: Indento 5;
   /* Гарнитура шрифта */
-  src: local(pompadur), url(fonts/Indento Regular.ttf);
+  src: local(pompadur), url(fonts/IndentoRegular.ttf);
   /* Для остальных браузеров */
 }
 
@@ -64,32 +64,39 @@
 
 @keyframes blue_neon {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
 
 @-moz-keyframes blue_neon {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
 
 @-webkit-keyframes blue_neon {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
   }
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -196,7 +203,7 @@ div#slider figure {
 
 .hero p {
   text-transform: uppercase;
-  letter-spacing: .5em;
+  letter-spacing: 0.5em;
   display: inline-block;
   border: 4px double rgba(255, 255, 255, 0.25);
   border-width: 4px 0;
@@ -209,10 +216,10 @@ div#slider figure {
   -webkit-text-shadow: 0 0 10px rgb(245, 236, 18);
 }
 
-.hero p>span {
+.hero p > span {
   font: 700 5em/1 "Oswald", sans-serif;
   letter-spacing: 0;
-  padding: .25em 0 .325em;
+  padding: 0.25em 0 0.325em;
   display: block;
   clear: both;
   position: relative;
@@ -220,7 +227,8 @@ div#slider figure {
   margin: 0 auto;
   text-shadow: 0 0 80px rgba(255, 255, 255, 1);
   /* Clip Background Image */
-  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+  background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png)
+    repeat-y;
   -webkit-background-clip: text;
   /* Animate Background Image */
   -webkit-text-fill-color: transparent;
@@ -371,7 +379,8 @@ div#slider figure {
 
 /*inputs*/
 
-#msform input, #msform textarea {
+#msform input,
+#msform textarea {
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -379,7 +388,7 @@ div#slider figure {
   width: 100%;
   box-sizing: border-box;
   font-family: montserrat;
-  color: #2C3E50;
+  color: #2c3e50;
   font-size: 13px;
 }
 
@@ -387,7 +396,7 @@ div#slider figure {
 
 #msform .action-button {
   width: 100px;
-  background: #27AE60;
+  background: #27ae60;
   font-weight: bold;
   color: white;
   border: 0 none;
@@ -397,8 +406,9 @@ div#slider figure {
   margin: 10px 5px;
 }
 
-#msform .action-button:hover, #msform .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+#msform .action-button:hover,
+#msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
 }
 
 /*headings*/
@@ -406,7 +416,7 @@ div#slider figure {
 .fs-title {
   font-size: 15px;
   text-transform: uppercase;
-  color: #2C3E50;
+  color: #2c3e50;
   margin-bottom: 10px;
 }
 
@@ -452,7 +462,7 @@ div#slider figure {
 /*progressbar connectors*/
 
 #progressbar li:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background: white;
@@ -472,8 +482,9 @@ div#slider figure {
 
 /*The number of the step and the connector before it = green*/
 
-#progressbar li.active:before, #progressbar li.active:after {
-  background: #27AE60;
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #27ae60;
   color: white;
 }
 
@@ -563,24 +574,57 @@ position: relative;
   height: 0;
   background: #ccc;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.78+1,0+100 */
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.78) 1%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.78) 1%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.78) 1%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00000000', GradientType=0);
   /* IE6-9 */
-  box-shadow: inset 0 2px 2px rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .15), 0 1px 3px rgba(0, 0, 0, .15);
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
-#My_page_header #menu_ul>li {
+#My_page_header #menu_ul > li {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+33,0+100 */
-  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -652,11 +696,28 @@ background-size:cover;*/
   color: black;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+24,0+100 */
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+55,0+100 */
-  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
@@ -671,13 +732,17 @@ background-size:cover;*/
   opacity: 1;
 }
 
-#My_page_avatar #menu_ul>li {
-  border: .5px solid white;
+#My_page_avatar #menu_ul > li {
+  border: 0.5px solid white;
 }
 
 */ #user_login_pasword {
   position: relarive;
-  background-image: radial-gradient(ellipse farthest-corner at center top, #23233f 0%, #000000 100%);
+  background-image: radial-gradient(
+    ellipse farthest-corner at center top,
+    #23233f 0%,
+    #000000 100%
+  );
   border: 2px solid black;
   padding: 0 2%;
   transition: background-image 1s ease-in-out;
@@ -690,7 +755,7 @@ background-size:cover;*/
 
 #My_page_main p {
   color: white;
-  font-family: 'Sarpanch', sans-serif;
+  font-family: "Sarpanch", sans-serif;
   /*-webkit-animation: blue_neon 1.5s ease-in-out infinite alternate;
  -moz-animation: blue_neon 1.5s ease-in-out infinite alternate;
  animation: blue_neon 1.5s ease-in-out infinite alternate;*/
@@ -711,7 +776,7 @@ background-size:cover;*/
 
 /********Анімація меню*****/
 
-#header {
+/* #header {
   position: fixed;
   text-align: justify;
   width: 100%;
@@ -723,29 +788,29 @@ background-size:cover;*/
   background: #ccc;
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
+/*background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
+/* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.78) 1%, rgba(0, 0, 0, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00000000', GradientType=0);
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7000000', endColorstr='#00000000', GradientType=0);
   /* IE6-9 */
-  box-shadow: inset 0 2px 2px rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .15), 0 1px 3px rgba(0, 0, 0, .15);
-}
+/*box-shadow: inset 0 2px 2px rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .15), 0 1px 3px rgba(0, 0, 0, .15);
+/*}
 
-#logo {
+/*#logo {
   display: block;
   position: relarive;
   margin-top: -0.8em;
   height: 3.5em;
 }
 
-#header li {
+/*#header li {
   display: inline-block;
   /* позволяем vertical-align выравнивать себя по вертикали */
-}
+/*}
 
-#menu_ul>li {/* головне меню */
-  float: left;
+/*#menu_ul>li {/* головне меню */
+/* float: left;
   position: relative;
   border-right: 1px solid rgba(0, 0, 0, .1);
   border-left: 1px solid rgba(0, 0, 0, .1);
@@ -753,26 +818,26 @@ background-size:cover;*/
   perspective: 1000px;
 }
 
-#menu_ul>li {
+/*#menu_ul>li {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,000000+52,000000+100&0+0,1+52,0+100 */
-  background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
+/* background: -moz-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
+/*background: -webkit-linear-gradient(top, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
+/*background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#00000000', GradientType=0);
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#00000000', GradientType=0);
   /* IE6-9 */
-}
+/*}
 
-#menu_ul>li:first-child {
+/*#menu_ul>li:first-child {
   border-left: 1px solid rgba(255, 255, 255, .25);
   box-shadow: -1px 0 0 rgba(0, 0, 0, .1), 1px 0 0 rgba(255, 255, 255, .25);
 }
 
 #menu a {
   /*стилізація головного меню*/
-  display: block;
+/*display: block;
   position: relarive;
   z-index: 10;
   padding: 13px 20px 13px 20px;
@@ -790,16 +855,16 @@ background-size:cover;*/
 
 #menu_ul>li:hover>a {
   /*стилізація головного меню*/
-  background: #333;
+/*background: #333;
   color: rgba(0, 223, 252, 1);
   text-shadow: none;
   background: url(../images/geom_fon_service.jpg);
   background-size: cover;
 }
 
-#menu_ul li ul {
+/*#menu_ul li ul {
   /*випадаюче меню*/
-  position: fixed;
+/*position: fixed;
   z-index: 1;
   padding: 0;
   opacity: 0;
@@ -813,7 +878,7 @@ background-size:cover;*/
 
 #menu_ul li ul li {
   /*розмір тесту на всю ширину випадаючого поля*/
-  position: relative;
+/*/*position: relative;
   width: 100%;
 
 }
@@ -830,7 +895,7 @@ background-size:cover;*/
 
 #menu li:hover ul {
   /*стилізація випадаючого меню*/
-  display: block;
+/* display: block;
   padding: 15px 0px;
   background: #333;
   opacity: 1;
@@ -842,11 +907,11 @@ background-size:cover;*/
   z-index: 99;
   background: url(../images/geom_fon_service.jpg);
   background-size: cover;
-}
+} */
 
-#menu li:hover #login {
+/*#menu li:hover #login {
   /*стилізація випадаючого меню Логін*/
-  display: block;
+/* display: block;
   width: 600px;
   padding: 15px 0px;
   background: #333;
@@ -882,7 +947,7 @@ background-size:cover;*/
 
 #menu_ul li li a {
   /*стилізація тексту у випадаючому меню*/
-  padding-left: 1 5px;
+/* padding-left: 1 5px;
   font-weight: 1.3em;
   font: normal 1.3em Orator Std;
   color: #ddd;
@@ -897,17 +962,18 @@ background-size:cover;*/
   background: rgba(0, 223, 252, .02);
 }
 
-}
+} */
+*/
 
 /**************Кінець анімації*****************/
-
+/* 
 p {
   margin-left: 20px;
-}
+} */
 
 /*******************Центрування хедера***********/
 
-#header ul {
+/* #header ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -917,9 +983,9 @@ p {
   position: relative;
   float: left;
   left: 50%;
-}
+} */
 
-#menu_ul>li {
+/* #menu_ul>li {
   position: relative;
   float: left;
   right: 50%;
@@ -928,18 +994,18 @@ p {
 
 /**************************************************/
 
-#menu ul li, #menu2 ul li {
+/* #menu ul li, #menu2 ul li {
   font: normal 18px Orator Std;
   color: #ffccff;
   margin: 0 auto;
   list-style-type: none;
-}
+} */ */
 
 
 
 /******Випадаюче меню верифікації або реєстрації*******/
 
-#login_main_container {
+/* #login_main_container {
   width: 500px;
   display: block;
   margin-left: auto;
@@ -967,10 +1033,17 @@ p {
   margin-top: 19px;
   position: relative;
   box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.27);
-}
+} */
 
 /*****************Іконки реєстрації*******************/
 
+/* .icon_registration>a {
+  display: block;
+  position: relative;
+  float: left;
+  width: 1px;
+  height: 1px;
+}
 .icon_registration {
   position: relative;
   width: 200px;
@@ -980,15 +1053,15 @@ p {
   background-repeat: no-repeat;
 }
 
-.icon_registration>a {
+/* .icon_registration>a {
   display: block;
   position: relative;
   float: left;
   width: 1px;
   height: 1px;
-}
+} */
 
-.icon_registration>a img {
+/* .icon_registration>a img {
   display: block;
   position: relative;
   width: 30px;
@@ -999,7 +1072,7 @@ p {
   margin: 0;
   padding: 0;
   text-decoration: none;
-}
+}  */
 
 /***********************************************************/
 
@@ -1052,8 +1125,14 @@ div.registration_botton {
 }
 
 .line_icon_left {
-  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, rgba(249, 249, 249, 0)), color-stop(1, rgba(233, 233, 233, 0.12)));
-  background: -moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, rgba(249, 249, 249, 0)),
+    color-stop(1, rgba(233, 233, 233, 0.12))
+  );
+  background: -moz-linear-gradient(center top, #f9f9f9 5%, #e9e9e9 100%);
   border: 1px solid rgba(102, 102, 102, 0.3);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -1070,8 +1149,14 @@ div.registration_botton {
   -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
-  background: -moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f9f9f9),
+    color-stop(1, #e9e9e9)
+  );
+  background: -moz-linear-gradient(center top, #f9f9f9 5%, #e9e9e9 100%);
   background-color: #f9f9f9;
   border-radius: 5px;
   text-indent: 0px;
@@ -1090,8 +1175,14 @@ div.registration_botton {
 }
 
 .login_form_batton_style:hover {
-  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
-  background: -moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #e9e9e9),
+    color-stop(1, #f9f9f9)
+  );
+  background: -moz-linear-gradient(center top, #e9e9e9 5%, #f9f9f9 100%);
 }
 
 .login_form_batton_style:active {
@@ -1100,147 +1191,142 @@ div.registration_botton {
 }
 /**************************************************************Вспливаюче вікно створення розділів************************************************************/
 #modal_form {
-	width: 300px;
-	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
-	border-radius: 5px;
-	border: 3px #000 solid;
-	background: #fff;
-	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-	left: 50%; /* пoлoвинa экрaнa слевa */
-	margin-top: -150px;
-	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
-	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
-	z-index: 1500; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
-	padding: 20px 10px;
+  width: 300px;
+  height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: #fff;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 50%; /* пoлoвинa экрaнa слевa */
+  margin-top: -150px;
+  margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 1500; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
 }
 #modal_form_language {
   overflow-y: scroll;
-	width: 70%;
-	height: auto; /* Рaзмеры дoлжны быть фиксирoвaны */
+  width: 70%;
+  height: auto; /* Рaзмеры дoлжны быть фиксирoвaны */
   min-height: 500px;
   max-height: 600px;
-	border-radius: 5px;
-	border: 3px #000 solid;
-	background: #fff;
-	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-	top: 20%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-	left: 20%; /* пoлoвинa экрaнa слевa */
-	margin-top: -150px;
-	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
-	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
-	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
-	z-index: 1500; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
-	padding: 20px 10px;
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: #fff;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 20%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 20%; /* пoлoвинa экрaнa слевa */
+  margin-top: -150px;
+  margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 1500; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
 }
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
 }
 /* Кнoпкa зaкрыть для тех ктo в тaнке) */
 #modal_form #modal_close {
-	width: 21px;
-	height: 21px;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	cursor: pointer;
-	display: block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
 }
 #modal_form_language #modal_close_language {
-	width: 21px;
-	height: 21px;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	cursor: pointer;
-	display: block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
 }
-
-
-
-
 
 /* Пoдлoжкa */
 #overlay {
-	z-index:1410; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-	position:fixed; /* всегдa перекрывaет весь сaйт */
-	background-color:#000; /* чернaя */
-	opacity:0.8; /* нo немнoгo прoзрaчнa */
-	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
-	filter:alpha(opacity=80);
-	width:100%;
-	height:100%; /* рaзмерoм вo весь экрaн */
-	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
-	left:0;
-	cursor:pointer;
-	display:none; /* в oбычнoм сoстoянии её нет) */
+  z-index: 1410; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position: fixed; /* всегдa перекрывaет весь сaйт */
+  background-color: #000; /* чернaя */
+  opacity: 0.8; /* нo немнoгo прoзрaчнa */
+  -moz-opacity: 0.8; /* фикс прозрачности для старых браузеров */
+  filter: alpha(opacity=80);
+  width: 100%;
+  height: 100%; /* рaзмерoм вo весь экрaн */
+  top: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left: 0;
+  cursor: pointer;
+  display: none; /* в oбычнoм сoстoянии её нет) */
 }
-#contentWraper{
+#contentWraper {
 }
-#contentLeng{
+#contentLeng {
   position: relative;
   width: 80%;
   height: auto;
   margin-top: 2%;
   float: right;
 }
-#contentLangInput{
+#contentLangInput {
   position: relative;
   border: 1px solid grey;
   width: 48%;
   float: left;
   color: black;
 }
-#contentLangInput2{
+#contentLangInput2 {
   position: relative;
   border: 1px solid grey;
   width: 48%;
   float: right;
   color: black;
 }
-#contentLangInput2 input{
-
+#contentLangInput2 input {
   width: 100%;
-
 }
-#addLangButton, #addLangButton2{
+#addLangButton,
+#addLangButton2 {
   margin-top: 10%;
   position: fixed;
 }
 
 .styled-select {
-   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
-   position: fixed;
-   float: left;
-   height: 29px;
-   overflow: hidden;
-   width: 240px;
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  position: fixed;
+  float: left;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
 }
 
 .styled-select select {
-   background: transparent;
-   border: none;
-   font-size: 14px;
-   height: 29px;
-   padding: 5px; /* If you add too much padding here, the options won't show in IE */
-   width: 268px;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px; /* If you add too much padding here, the options won't show in IE */
+  width: 268px;
 }
 
 .styled-select.slate {
-   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
-   height: 34px;
-   width: 240px;
+  background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+  height: 34px;
+  width: 240px;
 }
 
 .styled-select.slate select {
-   border: 1px solid #ccc;
-   font-size: 16px;
-   height: 34px;
-   width: 268px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 34px;
+  width: 268px;
 }
-#a{
+#a {
   margin-top: 40px;
 }
 
@@ -1257,11 +1343,23 @@ footer {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1f1f1f+0,303439+100 */
   background: rgb(31, 31, 31);
   /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(31, 31, 31, 1) 0%, rgba(48, 52, 57, 1) 100%);
+  background: -moz-linear-gradient(
+    top,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(48, 52, 57, 1) 100%
+  );
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(31, 31, 31, 1) 0%, rgba(48, 52, 57, 1) 100%);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(48, 52, 57, 1) 100%
+  );
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(31, 31, 31, 1) 0%, rgba(48, 52, 57, 1) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(48, 52, 57, 1) 100%
+  );
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f1f1f', endColorstr='#303439', GradientType=0);
   /* IE6-9 */
@@ -1273,7 +1371,7 @@ footer.bord {
 
 /* Установите ширину самого крайнего UL’а, отцентрируйте его и зафиксируйте относительно окна */
 
-footer>ul {
+footer > ul {
   width: 960px;
   position: fixed;
   left: 50%;
@@ -1285,7 +1383,7 @@ footer>ul {
 
 /* Четыре колонки ссылок */
 
-footer>ul>li {
+footer > ul > li {
   width: 25%;
   float: left;
 }
@@ -1318,7 +1416,7 @@ footer>ul>li {
   0% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4;
+    opacity: 0.4;
   }
   50% {
     -webkit-transform: translateY(3px);
@@ -1328,7 +1426,7 @@ footer>ul>li {
   100% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
@@ -1336,7 +1434,7 @@ footer>ul>li {
   0% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4;
+    opacity: 0.4;
   }
   50% {
     -webkit-transform: translateY(3px);
@@ -1346,11 +1444,11 @@ footer>ul>li {
   100% {
     -webkit-transform: translateY(6px);
     transform: translateY(6px);
-    opacity: .4;
+    opacity: 0.4;
   }
 }
 
-footer>ul>li {
+footer > ul > li {
   display: inline-block;
   position: relative;
   -webkit-transition-duration: 0.3s;
@@ -1362,17 +1460,21 @@ footer>ul>li {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-footer>ul>li:before {
+footer > ul > li:before {
   pointer-events: none;
   position: absolute;
   z-index: -1;
-  content: '';
+  content: "";
   top: 100%;
   left: 5%;
   height: 10px;
   width: 90%;
   opacity: 0;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
   /* W3C */
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -1380,7 +1482,9 @@ footer>ul>li:before {
   transition-property: transform, opacity;
 }
 
-footer>ul>li:hover, footer>ul>li:focus, footer>ul>li:active {
+footer > ul > li:hover,
+footer > ul > li:focus,
+footer > ul > li:active {
   -webkit-transform: translateY(-6px);
   transform: translateY(-6px);
   -webkit-animation-name: hover;
@@ -1397,8 +1501,10 @@ footer>ul>li:hover, footer>ul>li:focus, footer>ul>li:active {
   animation-direction: alternate;
 }
 
-footer>ul>li:hover:before, footer>ul>li:focus:before, .footer>ul>li:active:before {
-  opacity: .4;
+footer > ul > li:hover:before,
+footer > ul > li:focus:before,
+.footer > ul > li:active:before {
+  opacity: 0.4;
   -webkit-transform: translateY(6px);
   transform: translateY(6px);
   -webkit-animation-name: hover-shadow;
@@ -1421,7 +1527,7 @@ footer ul {
 
 /* Ссылки */
 
-footer>ul>li ul li {
+footer > ul > li ul li {
   margin-left: 43px;
   width: 100%;
   text-transform: uppercase;
@@ -1429,12 +1535,12 @@ footer>ul>li ul li {
   line-height: 1.8;
 }
 
-footer>ul>li ul li a {
+footer > ul > li ul li a {
   text-decoration: none !important;
   color: #7d8691 !important;
 }
 
-footer>ul>li ul li a:hover {
+footer > ul > li ul li a:hover {
   color: #ddd !important;
 }
 
@@ -1464,9 +1570,9 @@ footer a.logo_footer i {
 }
 
 footer a.logo_footer:before {
-  content: '';
+  content: "";
   display: inline-block;
-  background: url('../images/logo.png') no-repeat;
+  background: url("../images/logo.png") no-repeat;
   margin-right: 5px;
   width: 69px;
   height: 53px;
@@ -1493,14 +1599,14 @@ footer p {
   transition: opacity 0.4s;
 }
 
-footer>ul>li:hover p {
+footer > ul > li:hover p {
   opacity: 1;
 }
 
 footer p:before {
-  content: '';
+  content: "";
   display: inline-block;
-  background: url('images/logo.png') no-repeat;
+  background: url("images/logo.png") no-repeat;
   width: 16px;
   height: 18px;
   margin: 0 12px 0 15px;
@@ -1571,7 +1677,7 @@ footer p.clients:before {
   opacity: 1;
 }
 
-#iconsIndex>p {
+#iconsIndex > p {
   position: absolute;
   left: 50%;
 
@@ -1579,7 +1685,6 @@ footer p.clients:before {
 }
 
 .iconUp {
-
 }
 
 .iconDown {
@@ -1647,7 +1752,9 @@ footer p.clients:before {
   display: none;
 }
 
-.menu-button, .menu-button::before, .menu-button::after {
+.menu-button,
+.menu-button::before,
+.menu-button::after {
   display: block;
   background-color: #fff;
   position: absolute;
@@ -1658,25 +1765,25 @@ footer p.clients:before {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button::before {
+#menu-toggle:checked + .menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button {
+#menu-toggle:checked + .menu-button-container .menu-button {
   background: rgba(255, 255, 255, 0);
 }
 
-#menu-toggle:checked+.menu-button-container .menu-button::after {
+#menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
@@ -1685,7 +1792,8 @@ footer p.clients:before {
 
 /******************************************1920**(1920x1080)****************************/
 
-@media screen and (max-width:1920px) {}
+@media screen and (max-width: 1920px) {
+}
 
 /******************************************1600**(1600x900)****************************/
 
@@ -1710,7 +1818,7 @@ footer p.clients:before {
 
 /********************************************1366px**(1366x768)***************************************/
 
-@media screen and (max-width:1366px) {
+@media screen and (max-width: 1366px) {
   #menu li:hover #login {
     width: 560px;
     margin-left: -498px;
@@ -1719,7 +1827,7 @@ footer p.clients:before {
 
 /********************************************1280px**(1280x1024)***************************************/
 
-@media screen and (max-width:1281px) {
+@media screen and (max-width: 1281px) {
   #menu a {
     font-size: 1em;
   }
@@ -1727,7 +1835,7 @@ footer p.clients:before {
 
 /******************************************1080**(1920x1080)****************************/
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width: 1080px) {
   #menu a {
     font-size: 0.82em;
   }
@@ -1808,7 +1916,7 @@ overflow-x: scroll;
     font-size: 10em;
     margin: 20px;
   }
-  #login li>a {
+  #login li > a {
     margin: 10px;
     font-size: 15em !important;
   }
@@ -1847,7 +1955,7 @@ overflow-x: scroll;
     left: 100%;
     top: -5%;
   }
-  #menu_ul>li a {
+  #menu_ul > li a {
     width: 100%;
   }
   #menu_ul li ul li {
@@ -1859,28 +1967,28 @@ overflow-x: scroll;
    width: 100px;
    text-align: center;
  }*/
-  #menu_ul>li:hover {
+  #menu_ul > li:hover {
     /*стилізація головного меню*/
     background: #333;
     color: rgba(0, 223, 252, 1);
     text-shadow: none;
   }
-  #menu-toggle:checked~#menu {
+  #menu-toggle:checked ~ #menu {
     margin-top: 50px;
   }
-  #menu-toggle~#menu li {
+  #menu-toggle ~ #menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked~#menu li {
+  #menu-toggle:checked ~ #menu li {
     border: 1px solid #333;
     height: 2.6em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu_ul>li {
+  #menu_ul > li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -1889,7 +1997,7 @@ overflow-x: scroll;
     color: white;
     background-color: #222;
   }
-  #menu_ul>li:not(:last-child) {
+  #menu_ul > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
   #menu li:hover #login {
@@ -1937,10 +2045,10 @@ overflow-x: scroll;
     left: -80px;
     top: 30px;
   }
-  #My_page_avatar #menu_ul>li {
-    border: .5px solid white;
+  #My_page_avatar #menu_ul > li {
+    border: 0.5px solid white;
   }
-  #My_page_avatar #menu_ul>li:hover {
+  #My_page_avatar #menu_ul > li:hover {
     border: 1px solid black;
     background: none;
   }

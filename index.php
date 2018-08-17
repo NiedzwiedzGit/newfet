@@ -16,46 +16,21 @@
         <link href="css/slier_index_style.css" type="text/css" rel="stylesheet"/>
         <link href="css/style.css" type="text/css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-        <link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Neuton|Oswald">
+				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+				<link rel="stylesheet prefetch" href="http://fonts.googleapis.com/css?family=Neuton|Oswald">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
   </head>
   <?php  //розміщено тут для того щоб можна було динамічно змінювати позицію
                // вся процедура2винен бути в тій же папці, що і всі інші, якщо це не так, то просто змініть шлях
-                include    ("header.php");
+                include    ("headerNew.php");
                 ?>
   <body>
-  <!--  <div id="content">
-        <h2>Welcome!</h2>
-        <p>Hi, welcome to the demonstration for the NETTUTS tutorial - "How to Load In and Animate Content with jQuery"</p>
-        <p>In this tutorial we will be taking your average everyday website and enhancing it with jQuery. We will be adding ajax functionality so that the content loads into the relevant container instead of the user having to navigate to another page. We will also be integrating some awesome effects...</p>
-    </div>-->
 <div id="wraperIndex">
   <div id="scrollBotton">
   </div>
-  <!--<div id="slider">
-    <div id="filter"></div>
-    <figure>
-      <img src="../images/Doggy.jpg" alt>
-      <img src="../images/DSC_1903.jpg" alt>
-      <img src="../images/DSC_1929.jpg" alt>
-
-    </figure>
-  </div>-->
-<!-- безперервна анімація
-  <div id="textContent">
-    <section class="hero">
-
-      <p >
-      Spice up your type with CSS
-      <span>
-        IS Product
-      </span>
-      &mdash; no JavaScript required &mdash;
-    </p>
-</section>
-    </div>
--->
-<h1>Slider | <a href="http://creaticode.com/blog">Creaticode</a></h1>
+  
+<h1> <a href="#">.</a></h1>
 	<!-- ====================================
 	Contenedor Slider
 	=======================================-->

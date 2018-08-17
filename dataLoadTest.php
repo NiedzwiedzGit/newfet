@@ -14,7 +14,7 @@ while($row = mysqli_fetch_array($result))
 {
 $langName=$row['textVord'];
 $code=$taskOption;
-  echo '<br><br><div id="contentLangInput">Фраза '.$langName.' :<br></div>';
+  echo '<br><br><div class="contentLangInput">Фраза '.$langName.' :<br></div>';
   echo  '<input id="contentLangInput2"  type="text" name="taskOption2[]"><br>';
 }
 //echo $taskOption2;
