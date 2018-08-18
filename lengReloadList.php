@@ -1,5 +1,7 @@
 <?php
-echo'<li id="goLanguage" href="sity.html"><a href="#">+</a></li>';
+echo'<li id="goLanguage" type="button"  class="btn btn-danger" href="sity.html"><a href="#">+</a></li>';
+
+
 //echo '<li><form id="langRefresh2"><input id="goLanguage2" type="submit" value="Создать папку2"></form></li>';
 $db = mysqli_connect("localhost","root","42091i","is_db");
 mysqli_query($db,"SET NAMES 'UTF8'");

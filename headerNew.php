@@ -69,6 +69,8 @@
     <script language="JavaScript" type="text/javascript" src="js/swimmingWindow.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/ajaxTest.js"></script>
 	<link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <base href="http://localhost/newfet/">
 
   </head>
@@ -153,9 +155,8 @@
 				    <ul class="nav-sub-item-container">
                 <li class="nav-sub-item">
                     <form method='post' action='directorycreater.php'>
-                        <input id="go" type='submit' value='Создать папку'>
+                        <input id="go" class="btn btn-outline-success" type='submit' value='Создать папку'>
                     </form>
-                </li>
 
 				<li>
                     <a href="portfolio.php?foto_folder=night_photo" onclick="btnClick()"><?=Dict::_('H_fm1')?></a>
