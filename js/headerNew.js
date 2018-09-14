@@ -9,7 +9,7 @@ const subMenuLoginA = document.querySelector(".sub-menu-login>a");
 const subMenuLogin = document.querySelector(".sub-menu-login");
 const navMenuLogin = document.querySelector(".login");
 
-const subMenuLanguageA = document.querySelector(".sub-menu-language a");
+const subMenuLanguageA = document.querySelector(".sub-menu-language span");
 const subMenuLanguage = document.querySelector(".sub-menu-language");
 const navMenuLanguage = document.querySelector(".language");
 

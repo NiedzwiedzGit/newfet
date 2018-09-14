@@ -7,10 +7,10 @@ include "../header.php";
    <head>
      <meta charset="UTF-8">
  	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="js/prefixfree.min.js"></script>
+    
     <script language="JavaScript" type="text/javascript" src="js/mobile_menu.js"></script>
      <script language="JavaScript" type="text/javascript" src="js/fluensScroll.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
   <!-- <link href="css/info.css" type="text/css" rel="stylesheet"/> -->
     <link href="https://fonts.googleapis.com/css?family=Courgette|Kanit" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette|Kanit|Lobster" rel="stylesheet">

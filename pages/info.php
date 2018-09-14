@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include "../header.php";
+include "../headerNew.php";
  ?>
  <html>
    <head>
@@ -12,17 +12,18 @@ include "../header.php";
          <script src="js/mobile_menu.js"></script>
          <script src="js/jquery-scrollto.js"></script>
          <script src="js/fluensScroll.js"></script>
+         
+         
 
-
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
- 		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+ 		 <link href="css/style.css" type="text/css" rel="stylesheet"/>
+     <link href="css/main.css" type="text/css" rel="stylesheet"/>
     <link href="css/info.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <style>
     #AboutUs{
     /*  position: absolute;*/
       color: white;
-
     }
     </style>
    </head>
@@ -104,4 +105,4 @@ else if($_GET['info']=='ContactUs'){
 </div>
 <script src="js/ContactUs.js"></script>
 HERE;
-}?></body></html>
+}?><script src="js/headerNew.js"></script></body></html>

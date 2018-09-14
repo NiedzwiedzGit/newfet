@@ -1,5 +1,5 @@
 <?php
-echo'<li id="goLanguage" type="button"  class="btn btn-danger" href="sity.html"><a href="#">+</a></li>';
+echo'<li id="goLanguage"   class="glyphicon glyphicon-plus" ><a href="#"></a></li>';
 
 
 //echo '<li><form id="langRefresh2"><input id="goLanguage2" type="submit" value="Создать папку2"></form></li>';

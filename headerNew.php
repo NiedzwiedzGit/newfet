@@ -70,7 +70,8 @@
     <script language="JavaScript" type="text/javascript" src="js/ajaxTest.js"></script>
 	<link href="css/main.css" type="text/css" rel="stylesheet"/>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
+    
     <base href="http://localhost/newfet/">
 
   </head>
@@ -80,9 +81,11 @@
     <div id="modal_form"><!-- Creating folder form Portfolio -->
       <span id="modal_close">X</span> <!-- Close botton -->
        <!-- Here can be any content -->
-      <form method='post' action='directorycreater.php'>
-         Имя папки:
+      <form class="form" method='post' action='directorycreater.php'>
+        
+        <!-- Имя папки:
         <input type='text' name='dir'>
+        <br>-->
         <br>
         <?PHP
         mysqli_query($db,"SET NAMES 'UTF8'");
@@ -91,11 +94,17 @@
         {
           $langName=$row['langName'];
           $code=$row['code'];
-          echo 'Имя папки '.$langName.':<br> <input type="text" name="'.$code.'"><br><br>';
-          echo $code;
+         
+               echo'<div class="form-group row">
+                    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">'.$langName.'</label>
+                        <div class="col-sm-10">
+                            <input type="text" name="'.$code.'" class="form-control form-control-sm" id="colFormLabelSm" placeholder="folder name">
+                        </div>
+                    </div>';
+         
         }
         ?>
-        <input type='submit' value='Создать папку'>
+        <button type="submit" class="btn btn-outline-dark btnPosition">Создать папку</button>
       </form>
     </div>
 
@@ -137,8 +146,8 @@
 
 
             
-                    <div class="logo"><a href="#"> 
-                        <img src="./images/logo.png" alt="Логотип"/></a>
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="Логотип"/>
                     </div>   
                 
 
@@ -151,7 +160,7 @@
         
 	         <ul class="menu_ul">
 
-	        <li class="nav-item sub-menu-portfolio"><a  href="#"><?=Dict::_('H1')?></a>
+	        <li class="nav-item sub-menu-portfolio"><?=Dict::_('H1')?>
 				    <ul class="nav-sub-item-container">
                 <li class="nav-sub-item">
                     <form method='post' action='directorycreater.php'>
@@ -193,7 +202,7 @@
                         $title = htmlspecialchars($title);
                         $nomargin='';
                         if(($i+1)%10==0) $nomargin='nomargin';
-                        echo '<li><a class="deleteBotton1" href="portfolio.php?foto_folder='.$file.'" title="'.$title.'">'.Dict::_("$file").'</a><a class="deleteBotton2" href="directorydelete.php?foto_folder='.$file.'" title="'.$title.'">X</a></li>';
+                        echo '<li><a class="deleteBotton1" href="portfolio.php?foto_folder='.$file.'" title="'.$title.'">'.Dict::_("$file").'</a><a class="glyphicon glyphicon-trash red btn btn-outline-danger" href="directorydelete.php?foto_folder='.$file.'" title="'.$title.'"></a></li>';
                         $i++;
                     }
                         /*echo '	<li><a href="portfolio.php?foto_folder=art_work"><?=Dict::_("'.$file.'")?></a></li>';
@@ -327,7 +336,7 @@ HERE;
 ?>
 					</ul>
 			   </li>
-         <li class="nav-item sub-menu-language"><a id="langHover" href="#"><?=Dict::_('H7')?></a>
+         <li class="nav-item sub-menu-language"><span id="langHover"><?=Dict::_('H7')?></span>
 
        <ul class="language">
          <div class="langContent"></div>

@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -56,7 +57,7 @@ html, body {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
-@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400, 700);
 .align-center {
   text-align: center;
 }
@@ -154,12 +155,14 @@ html, body {
   outline: none;
 }
 
-.contact-form .input-text:focus+.label, .contact-form .input-text.not-empty+.label {
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
   -webkit-transform: translateY(-24px);
   transform: translateY(-24px);
 }
 
-.contact-form .input-text:focus+.label_message, .contact-form .input-text.not-empty+.label_message {
+.contact-form .input-text:focus + .label_message,
+.contact-form .input-text.not-empty + .label_message {
   -webkit-transform: translateY(-30px);
   transform: translateY(-30px);
   transition: 1s;
@@ -177,10 +180,10 @@ html, body {
   color: #888;
   cursor: text;
   opacity: 1;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .label2 {
@@ -217,13 +220,14 @@ html, body {
   font-weight: 400;
   color: #888;
   cursor: text;
-  -webkit-transition: -webkit-transform .2s ease-in-out;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-.contact-form .label_message :hover {}
+.contact-form .label_message :hover {
+}
 
 .contact-form .submit-btn {
   display: inline-block;
@@ -303,8 +307,8 @@ font-size: 250%;
 
 .maineContent p {
   line-height: 1.7;
-  font-family: 'Kanit', sans-serif;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 0.9em;
   cursor: pointer;
   -moz-user-select: none;
@@ -322,7 +326,7 @@ font-size: 250%;
   margin-left: 10%;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .maineContent {
     margin-left: 2%;
     margin-right: 2%;
@@ -335,7 +339,7 @@ font-size: 250%;
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .maineContent img {
     max-width: 200px;
     margin-left: 10%;
