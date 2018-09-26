@@ -27,6 +27,9 @@
                 ?>
   <body>
 <div id="wraperIndex">
+<video autoplay muted loop id="myVideo">
+  <source src="images/Water_15___14s___4k_res.mp4" type="video/mp4">
+</video>
   <div id="scrollBotton">
   </div>
   

@@ -71,6 +71,11 @@
         margin-left: 20%;
         font-size: 2rem;
       }
+
+      li {
+        text-align: left;
+        margin-left: 20px;
+      }
     }
 
     //animation login menu
@@ -115,6 +120,24 @@
         font-size: 2rem;
       }
     }
+  }
+}
+
+.headerSideContent {
+  position: absolute;
+  z-index: 800;
+  right: 0;
+  /*width in swimmingWindow.js */
+  height: 100%;
+  opacity: 0.9;
+  // border: 2px solid black;
+  background: #eece1e;
+  overflow: hidden;
+  @include easeOut;
+  transform: translate3d(100%, 0, 0);
+  &.show {
+    background-color: #ffffff;
+    transform: translate3d(0, 0, 0);
   }
 }
 

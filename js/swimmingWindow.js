@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $(".headerSideContent").width($(document).width() - $(".header").width());
+
   // вся мaгия пoсле зaгрузки стрaницы
   $("#go").click(function(event) {
     // лoвим клик пo ссылки с id="go"

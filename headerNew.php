@@ -150,6 +150,8 @@
                         <img src="./images/logo.png" alt="Логотип"/>
                     </div>   
                 
+                <div class="headerSideContent">
+                </div>
 
      <div class="header">
        <nav>
@@ -214,20 +216,21 @@
 				</li>
 
 
-	            <li class="nav-item">
+	            <li class="nav-item content-item">
                     <a href="pages/info.php?info=services" class="urlparam" data-text="scrollto"><?=Dict::_('H2')?></a>
                 </li>
 
-	            <li class="nav-item">
-                    <a href="pages/info.php?info=AboutUs"><?=Dict::_('H4')?></a>
+	            <li class="nav-item content-item">
+                   <div><?=Dict::_('H4')?></div>
+                   <!-- <a href="index.php?info=AboutUs"> -->
                 </li>
 
                 
-	            <li class="nav-item">
+	            <li class="nav-item content-item">
                     <a href="pages/info.php?info=ContactUs"><?=Dict::_('H5')?></a>
                 </li>
 
-			    <li class="nav-item sub-menu-login">
+			    <li class="sub-menu-login nav-item">
                     <a href="#".html"><?=Dict::_('H6')?></a>
 			        <ul class="login">
 					    <?php

@@ -1,6 +1,8 @@
 /*  Код відповідає за те щоб на всіх браузерах коректно відпрацювувалась анімвція і z-index футера */
 $(document).ready(function() {
   $(window).scroll(function() {
+    var step = 10; // вместо шага в 1, сделаем 10
+
     var bo = $(this).scrollTop();
     var a = $("footer").css("z-index");
     console.log(bo);

@@ -143,15 +143,27 @@ body {
   height: 100%;
   color: white;
   font-size: 13px;
-  /*background: url(../images/fon.jpg) ;*/
-  border: #dce8e7 2px solid;
-  background: #dce8e7;
+  background: url(../images/Water_15___14s___4k_res.mp4);
+  overflow: hidden;
+  /* border: #dce8e7 2px solid; */
+  /* border: 20px solid black; */
+  /* background: #dce8e7; */
+
   text-align: center;
+}
+#myVideo {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  overflow: hidden;
 }
 
 #slider {
   position: relative;
   margin-top: 3%;
+  width: 60%;
 }
 
 div#slider {
@@ -1229,7 +1241,8 @@ div.registration_botton {
 ::-webkit-scrollbar {
   width: 0px;
   /* remove scrollbar space */
-  background: transparent; /* optional: just make scrollbar invisible */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
 }
 /* Кнoпкa зaкрыть для тех ктo в тaнке) */
 #modal_form #modal_close {
@@ -1253,7 +1266,8 @@ div.registration_botton {
 /* Пoдлoжкa */
 #overlay {
   z-index: 1410; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
-  position: fixed; /* всегдa перекрывaет весь сaйт */
+  position: fixed;
+  /* всегдa перекрывaет весь сaйт */
   background-color: #000; /* чернaя */
   opacity: 0.8; /* нo немнoгo прoзрaчнa */
   -moz-opacity: 0.8;
@@ -1665,7 +1679,7 @@ footer p.clients:before {
   position: absolute;
   font-size: 30em;
   /* background: #dce8e7; */
-  color: #dce8e7;
+  color: #fff;
   /* animation-name: textSlide;
   animation-duration: 30s;
   animation-timing-function: ease;
