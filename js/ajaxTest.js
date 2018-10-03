@@ -1,18 +1,4 @@
 $(document).ready(function() {
-  // либо $(function() {
-  /*$('#goLanguage').click(function(event){
-        event.preventDefault(); // выключaем стaндaртную рoль элементa
-
-        $.ajax({
-            url:"dataLoadTest.php",
-            cache: false,
-            success: function(responce){
-                $('#content').html(responce); //в этот див нужно вывести "новость"
-                $('#content').addClass( "border" );
-            }
-        });
-    });*/
-
   $("#addLangButton").click(function(event) {
     event.preventDefault(); // выключaем стaндaртную рoль элементa
     var form = $("#codeForm");
@@ -24,9 +10,6 @@ $(document).ready(function() {
         $("#contentLeng").html(responce); //в этот див нужно вывести "новость"
         var langRefresh = $("#lang");
         $.ajax({
-          //type: "POST",
-          //url: langRefresh.attr( 'action' ),
-          //data: langRefresh.serialize(),
           url: "lengReloadList.php",
           cache: false,
           success: function(responce) {
@@ -56,13 +39,24 @@ $(document).ready(function() {
     event.preventDefault(); // выключaем стaндaртную рoль элементa
     var langRefresh = $("#langContent");
     $.ajax({
-      //type: "POST",
-      //url: langRefresh.attr( 'action' ),
-      //data: langRefresh.serialize(),
       url: "lengReloadList.php",
       cache: false,
       success: function(responce) {
         $(".langContent").html(responce); //в этот див нужно вывести "новость"
+      }
+    });
+  });
+
+  $(".content-item div").click(function(event) {
+    // alert($(this).attr("name"));
+    event.preventDefault(); // выключaем стaндaртную рoль элементa
+    var form = $("#codeForm2");
+    $.ajax({
+      type: "GET",
+      url: "pages/info.php",
+      data: "info=" + $(this).attr("name"),
+      success: function(responce) {
+        $(".headerSideContent").html(responce); //в этот див нужно вывести "новость"
       }
     });
   });

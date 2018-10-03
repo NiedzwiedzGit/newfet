@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <?php
-include "../header.php";
+// include "../header.php";
  ?>
 
    <head>
      <meta charset="UTF-8">
  	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <script language="JavaScript" type="text/javascript" src="js/mobile_menu.js"></script>
      <script language="JavaScript" type="text/javascript" src="js/fluensScroll.js"></script>
 
@@ -21,8 +21,11 @@ include "../header.php";
     padding: 20px;
     background-color: rgba(67, 48, 48, 0.9);
     border: 2px white solid;
+    
     }
-
+.maineContent{
+ 
+}
     </style>
    </head>
    <body>

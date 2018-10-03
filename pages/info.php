@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include "../headerNew.php";
+include "../bd.php";
  ?>
  <html>
    <head>
@@ -60,7 +60,7 @@ $result = mysqli_query($db,"SELECT email,login FROM users WHERE login='$login' A
 $AboutUsFile=file_get_contents('../language/AboutUsLang/aboutUs_'.$_SESSION['lang'].'.php');
 if($_GET['info']=='AboutUs'){
             print    <<<HERE
-   <div id="AboutUs">
+   <div id="">
 $AboutUsFile
 </div>
 HERE;

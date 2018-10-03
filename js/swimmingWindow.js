@@ -1,5 +1,20 @@
 $(document).ready(function() {
-  $(".headerSideContent").width($(document).width() - $(".header").width());
+  $windoWidth = $(window).width();
+
+  setInterval(function() {
+    $(".headerSideContent").width($(window).width() - $(".header").width());
+  }, 1000); // 1000 м.сек
+  $(window).on("load resize", function() {
+    $(".headerSideContent").width($(window).width() - $(".header").width());
+    $windoWidth = $(window).width();
+    if ($windoWidth <= 800) {
+      $(".text").hide("slow");
+      $(".material-icons").show("slow");
+    } else {
+      $(".text").show("slow");
+      $(".material-icons").hide("slow");
+    }
+  });
 
   // вся мaгия пoсле зaгрузки стрaницы
   $("#go").click(function(event) {

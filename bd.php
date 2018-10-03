@@ -17,7 +17,8 @@ else if($_COOKIE['lang']){
 else{
   $_SESSION['lang']='en';
 }
-$dict= include 'language/'.$_SESSION['lang'].'.php';
+// $dict= include 'language/'.$_SESSION['lang'].'.php';
+$dict= include 'language/en.php';
 
 if(isset($_GET['sn'])){
   $_SESSION['sn']=$_GET['sn'];

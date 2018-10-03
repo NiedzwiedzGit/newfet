@@ -3,7 +3,8 @@
 $db = mysqli_connect("localhost","root","42091i","is_db");
 mysqli_query($db,"SET NAMES 'UTF8'");
 $lang= array ();
-$result = mysqli_query($db,"SELECT code,textVord,codeInc FROM enleng");
+$lengSession=$_SESSION['lang'].'leng';
+$result = mysqli_query($db,"SELECT code,textVord,codeInc FROM $lengSession");
 while($row = mysqli_fetch_array($result))
 {
       $a=$row['code'].$row['codeInc'];

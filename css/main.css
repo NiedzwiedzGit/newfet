@@ -29,7 +29,7 @@
     float: left;
     text-align: center;
     font-size: 3rem;
-    transform: translate3d(-200%, 0, 0);
+    transform: translate3d(0, 0, 0);
     transition: all 0.5s ease-out; }
     .header .nav-item.show {
       transform: translate3d(0, 0, 0); }
@@ -45,6 +45,8 @@
       transition: all 0.5s ease-out;
       transform: translate3d(0, -600%, 0);
       border-bottom: 3px grey solid; }
+    .header .nav-item.sub-menu-portfolio.glyphicon {
+      visibility: visible; }
     .header .nav-item .nav-sub-item-container {
       transform: translate3d(-200%, 0, 0);
       transition: all 0.5s ease-out; }
@@ -96,7 +98,13 @@
   transform: translate3d(100%, 0, 0); }
   .headerSideContent.show {
     background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-y: scroll;
     transform: translate3d(0, 0, 0); }
+
+@media screen and (max-width: 800px) {
+  .header {
+    width: 10ch; } }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }

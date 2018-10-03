@@ -68,10 +68,29 @@
     <script language="JavaScript" type="text/javascript" src="js/mobile_menu.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/swimmingWindow.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/ajaxTest.js"></script>
-	<link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+
     <!-- Latest compiled and minified CSS -->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
     
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<!-- //mozlywo ne potribne -->
+
+         <script src="js/prefixfree.min.js"></script>
+         <script src="js/mobile_menu.js"></script>
+         <script src="js/jquery-scrollto.js"></script>
+         <script src="js/fluensScroll.js"></script>
+         
+         
+
+ 		 <link href="css/style.css" type="text/css" rel="stylesheet"/>
+     <link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <link href="css/info.css" type="text/css" rel="stylesheet"/>
+
+<!-- mozlywo ne potribne //-->
+
     <base href="http://localhost/newfet/">
 
   </head>
@@ -161,8 +180,8 @@
          </label>
         
 	         <ul class="menu_ul">
-
-	        <li class="nav-item sub-menu-portfolio"><?=Dict::_('H1')?>
+	        <li class="nav-item sub-menu-portfolio ">
+                <i class="material-icons">collections</i><i class='text'><?=Dict::_('H1')?></i>
 				    <ul class="nav-sub-item-container">
                 <li class="nav-sub-item">
                     <form method='post' action='directorycreater.php'>
@@ -217,21 +236,23 @@
 
 
 	            <li class="nav-item content-item">
-                    <a href="pages/info.php?info=services" class="urlparam" data-text="scrollto"><?=Dict::_('H2')?></a>
+                    <!-- <a href="pages/info.php?info=services" class="urlparam" data-text="scrollto"><i class="material-icons">devices_other</i><i class='text'><?=Dict::_('H2')?></i></a> -->
+                    <div  name="services"><i class="material-icons">devices_other</i><i class='text'><?=Dict::_('H2')?></i></div>
                 </li>
 
 	            <li class="nav-item content-item">
-                   <div><?=Dict::_('H4')?></div>
+                   <div  name="AboutUs"><i class="material-icons">child_care</i><i class='text'><?=Dict::_('H4')?></i></div>
                    <!-- <a href="index.php?info=AboutUs"> -->
                 </li>
 
                 
 	            <li class="nav-item content-item">
-                    <a href="pages/info.php?info=ContactUs"><?=Dict::_('H5')?></a>
+                <div name="ContactUs"><i class="material-icons">phone_forwarded</i><i class='text'><?=Dict::_('H5')?></i></div>
+                    <!-- <a href="pages/info.php?info=ContactUs"><i class="material-icons">phone_forwarded</i><i class='text'><?=Dict::_('H5')?></i></a> -->
                 </li>
 
 			    <li class="sub-menu-login nav-item">
-                    <a href="#".html"><?=Dict::_('H6')?></a>
+                    <a href="#".html"><i class="material-icons">account_box</i><i class='text'><?=Dict::_('H6')?></i></a>
 			        <ul class="login">
 					    <?php
                             if (empty($myrow['id'])){
@@ -339,7 +360,7 @@ HERE;
 ?>
 					</ul>
 			   </li>
-         <li class="nav-item sub-menu-language"><span id="langHover"><?=Dict::_('H7')?></span>
+         <li class="nav-item sub-menu-language"><span id="langHover"><i class="material-icons">translate</i><i class='text'><?=Dict::_('H7')?></i></span>
 
        <ul class="language">
          <div class="langContent"></div>

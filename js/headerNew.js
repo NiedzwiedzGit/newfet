@@ -9,7 +9,7 @@ const subMenuLoginA = document.querySelector(".sub-menu-login>a");
 const subMenuLogin = document.querySelector(".sub-menu-login");
 const navMenuLogin = document.querySelector(".login");
 
-const navMenuContentItem = document.querySelector(".content-item div");
+const navMenuContentItem = document.querySelectorAll(".content-item div");
 const headerSideContent = document.querySelector(".headerSideContent");
 
 const subMenuLanguageA = document.querySelector(".sub-menu-language span");
@@ -34,21 +34,24 @@ function toggleMenu() {
   } else {
     menuBtn.classList.remove("close");
     header.classList.remove("show");
+    headerSideContent.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
     //set menu state
     showMenu = false;
+    showSubMenu = false;
   }
 }
-navMenuContentItem.addEventListener("click", contentItem);
+navMenuContentItem.forEach(item => item.addEventListener("click", contentItem));
 function contentItem() {
-  if (!showSubMenu) {
-    //  headerSideContent.classList.add("close");
-    headerSideContent.classList.add("show");
+  document.onclick = function(e) {
+    //alert(this.e.target.text);this.innerHTML
+  };
 
+  if (!showSubMenu) {
+    headerSideContent.classList.add("show");
     //set menu state
     showSubMenu = true;
   } else {
-    // headerSideContent.classList.remove("close");
     headerSideContent.classList.remove("show");
     //set menu state
     showSubMenu = false;
