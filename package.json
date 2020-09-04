@@ -6,7 +6,7 @@
   "homepage": "https://niedzwiedzgit.github.io/newfet",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {},
   "scripts": {
